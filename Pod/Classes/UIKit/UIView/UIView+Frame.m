@@ -12,13 +12,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)left {
+- (CGFloat)as_left {
     return self.frame.origin.x;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setLeft:(CGFloat)x {
+- (void)setAs_left:(CGFloat)x {
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
@@ -26,13 +26,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)top {
+- (CGFloat)as_top {
     return self.frame.origin.y;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setTop:(CGFloat)y {
+- (void)setAs_top:(CGFloat)y {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
@@ -40,13 +40,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)right {
+- (CGFloat)as_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setRight:(CGFloat)right {
+- (void)setAs_right:(CGFloat)right {
     CGRect frame = self.frame;
     frame.origin.x = right - frame.size.width;
     self.frame = frame;
@@ -54,13 +54,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)bottom {
+- (CGFloat)as_bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setBottom:(CGFloat)bottom {
+- (void)setAs_bottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
     self.frame = frame;
@@ -68,37 +68,37 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)centerX {
+- (CGFloat)as_centerX {
     return self.center.x;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setAs_centerX:(CGFloat)centerX {
     self.center = CGPointMake(centerX, self.center.y);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)centerY {
+- (CGFloat)as_centerY {
     return self.center.y;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setAs_centerY:(CGFloat)centerY {
     self.center = CGPointMake(self.center.x, centerY);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)width {
+- (CGFloat)as_width {
     return self.frame.size.width;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setWidth:(CGFloat)width {
+- (void)setAs_width:(CGFloat)width {
     CGRect frame = self.frame;
     frame.size.width = width;
     self.frame = frame;
@@ -106,13 +106,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)height {
+- (CGFloat)as_height {
     return self.frame.size.height;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setHeight:(CGFloat)height {
+- (void)setAs_height:(CGFloat)height {
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
@@ -120,30 +120,30 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)asScreenX {
+- (CGFloat)as_ScreenX {
     CGFloat x = 0.0f;
     for (UIView* view = self; view; view = view.superview) {
-        x += view.left;
+        x += view.as_left;
     }
     return x;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)asScreenY {
+- (CGFloat)as_ScreenY {
     CGFloat y = 0.0f;
     for (UIView* view = self; view; view = view.superview) {
-        y += view.top;
+        y += view.as_top;
     }
     return y;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)screenViewX {
+- (CGFloat)as_screenViewX {
     CGFloat x = 0.0f;
     for (UIView* view = self; view; view = view.superview) {
-        x += view.left;
+        x += view.as_left;
         
         if ([view isKindOfClass:[UIScrollView class]]) {
             UIScrollView* scrollView = (UIScrollView*)view;
@@ -156,10 +156,10 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGFloat)screenViewY {
+- (CGFloat)as_screenViewY {
     CGFloat y = 0;
     for (UIView* view = self; view; view = view.superview) {
-        y += view.top;
+        y += view.as_top;
         
         if ([view isKindOfClass:[UIScrollView class]]) {
             UIScrollView* scrollView = (UIScrollView*)view;
@@ -171,19 +171,19 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGRect)screenFrame {
-    return CGRectMake(self.screenViewX, self.screenViewY, self.width, self.height);
+- (CGRect)as_screenFrame {
+    return CGRectMake(self.as_screenViewX, self.as_screenViewY, self.as_width, self.as_height);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGPoint)origin {
+- (CGPoint)as_origin {
     return self.frame.origin;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setOrigin:(CGPoint)origin {
+- (void)setAs_origin:(CGPoint)origin {
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
@@ -191,13 +191,13 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGSize)size {
+- (CGSize)as_size {
     return self.frame.size;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)setSize:(CGSize)size {
+- (void)setAs_size:(CGSize)size {
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
@@ -205,11 +205,11 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (CGPoint)offsetFromView:(UIView*)otherView {
+- (CGPoint)as_offsetFromView:(UIView*)otherView {
     CGFloat x = 0.0f, y = 0.0f;
     for (UIView* view = self; view && view != otherView; view = view.superview) {
-        x += view.left;
-        y += view.top;
+        x += view.as_left;
+        y += view.as_top;
     }
     return CGPointMake(x, y);
 }

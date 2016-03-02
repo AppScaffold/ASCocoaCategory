@@ -11,12 +11,12 @@
 @implementation UIView (ASCommon)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (UIView*)descendantOrSelfWithClass:(Class)cls {
+- (UIView*)as_descendantOrSelfWithClass:(Class)cls {
     if ([self isKindOfClass:cls])
         return self;
     
     for (UIView* child in self.subviews) {
-        UIView* it = [child descendantOrSelfWithClass:cls];
+        UIView* it = [child as_descendantOrSelfWithClass:cls];
         if (it)
             return it;
     }
@@ -26,12 +26,12 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (UIView*)ancestorOrSelfWithClass:(Class)cls {
+- (UIView*)as_ancestorOrSelfWithClass:(Class)cls {
     if ([self isKindOfClass:cls]) {
         return self;
         
     } else if (self.superview) {
-        return [self.superview ancestorOrSelfWithClass:cls];
+        return [self.superview as_ancestorOrSelfWithClass:cls];
         
     } else {
         return nil;
@@ -40,7 +40,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)removeAllSubviews {
+- (void)as_removeAllSubviews {
     while (self.subviews.count) {
         UIView* child = self.subviews.lastObject;
         [child removeFromSuperview];

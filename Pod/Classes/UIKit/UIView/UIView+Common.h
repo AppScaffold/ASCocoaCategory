@@ -13,16 +13,16 @@
 /**
  * Finds the first descendant view (including this view) that is a member of a particular class.
  */
-- (UIView*)descendantOrSelfWithClass:(Class)cls;
+- (UIView*)as_descendantOrSelfWithClass:(Class)cls;
 
 /**
  * Finds the first ancestor view (including this view) that is a member of a particular class.
  */
-- (UIView*)ancestorOrSelfWithClass:(Class)cls;
+- (UIView*)as_ancestorOrSelfWithClass:(Class)cls;
 
 /**
  * Removes all subviews.
  */
-- (void)removeAllSubviews;
+- (void)as_removeAllSubviews;
 
 @end

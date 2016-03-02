@@ -10,13 +10,8 @@
 
 @implementation NSDictionary (ASCommon)
 
-- (BOOL)containsObjectForKey:(id)key {
+- (BOOL)as_containsObjectForKey:(id)key {
 	return [[self allKeys] containsObject:key];
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (BOOL)isEmpty {
-	return [self count] == 0 ? YES : NO;
 }
 
 @end
