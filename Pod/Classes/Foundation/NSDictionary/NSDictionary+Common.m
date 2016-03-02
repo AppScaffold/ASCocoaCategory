@@ -8,13 +8,13 @@
 
 #import "NSDictionary+Common.h"
 
-
 @implementation NSDictionary (ASCommon)
 
 - (BOOL)containsObjectForKey:(id)key {
 	return [[self allKeys] containsObject:key];
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)isEmpty {
 	return [self count] == 0 ? YES : NO;
 }

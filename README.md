@@ -1,5 +1,5 @@
 # ASCocoaCategory
-A collection of UIKit and NSFoundation categories, make convenience methods to easily use. [tags:cocoa,objective-c,ios,mac,category] 
+A collection of UIKit and NSFoundation categories, make convenience methods to easily use. 
 
 [![CI Status](http://img.shields.io/travis/appscaffold/ASCocoaCategory.svg?style=flat)](https://travis-ci.org/appscaffold/ASCocoaCategory)
 [![Version](https://img.shields.io/cocoapods/v/ASCocoaCategory.svg?style=flat)](http://cocoapods.org/pods/ASCocoaCategory)
