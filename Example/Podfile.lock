@@ -1,0 +1,14 @@
+PODS:
+  - ASCocoaCategory (0.0.1)
+
+DEPENDENCIES:
+  - ASCocoaCategory (from `../`)
+
+EXTERNAL SOURCES:
+  ASCocoaCategory:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ASCocoaCategory: 3bddd1c93a1d3de29e2fe27200adb40209a6ecc0
+
+COCOAPODS: 0.37.2

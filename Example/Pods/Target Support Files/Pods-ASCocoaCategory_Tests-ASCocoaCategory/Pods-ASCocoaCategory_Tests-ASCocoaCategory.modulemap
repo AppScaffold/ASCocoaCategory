@@ -1,0 +1,6 @@
+framework module ASCocoaCategory {
+  umbrella header "Pods-ASCocoaCategory_Tests-ASCocoaCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
