@@ -34,6 +34,12 @@
 		C73D54E4D0624075A9F0E9E0 /* UIView+Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 7936E897E26BD2C358935E50 /* UIView+Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCCF9FF0D389585D34D58251 /* ASCocoaCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB711B4BE8F38EDCCE381C8 /* ASCocoaCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D975566DD3C4D4F8EC22BD64 /* Pods-ASCocoaCategory_Example-ASCocoaCategory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC8B81B9F53106637086C58 /* Pods-ASCocoaCategory_Example-ASCocoaCategory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC74AA1B1C8ADD6C00D2C627 /* UIColor+ASCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = DC74AA141C8ADD6C00D2C627 /* UIColor+ASCommon.h */; };
+		DC74AA1C1C8ADD6C00D2C627 /* UIColor+ASCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74AA151C8ADD6C00D2C627 /* UIColor+ASCommon.m */; };
+		DC74AA1D1C8ADD6C00D2C627 /* UIColor+ASHex.h in Headers */ = {isa = PBXBuildFile; fileRef = DC74AA161C8ADD6C00D2C627 /* UIColor+ASHex.h */; };
+		DC74AA1E1C8ADD6C00D2C627 /* UIColor+ASHex.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74AA171C8ADD6C00D2C627 /* UIColor+ASHex.m */; };
+		DC74AA1F1C8ADD6C00D2C627 /* UIImage+ASColor.h in Headers */ = {isa = PBXBuildFile; fileRef = DC74AA191C8ADD6C00D2C627 /* UIImage+ASColor.h */; };
+		DC74AA201C8ADD6C00D2C627 /* UIImage+ASColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74AA1A1C8ADD6C00D2C627 /* UIImage+ASColor.m */; };
 		F3F8B0700FA54F9D01C081C0 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 9068D1EABCD80CEE8BC80125 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -116,6 +122,12 @@
 		CDB711B4BE8F38EDCCE381C8 /* ASCocoaCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASCocoaCategory.h; sourceTree = "<group>"; };
 		D08CB629BC29757D702B6FA9 /* Pods-ASCocoaCategory_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASCocoaCategory_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D3AD4199DBF6E56D4DD19568 /* Pods-ASCocoaCategory_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASCocoaCategory_Tests-resources.sh"; sourceTree = "<group>"; };
+		DC74AA141C8ADD6C00D2C627 /* UIColor+ASCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASCommon.h"; sourceTree = "<group>"; };
+		DC74AA151C8ADD6C00D2C627 /* UIColor+ASCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASCommon.m"; sourceTree = "<group>"; };
+		DC74AA161C8ADD6C00D2C627 /* UIColor+ASHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASHex.h"; sourceTree = "<group>"; };
+		DC74AA171C8ADD6C00D2C627 /* UIColor+ASHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASHex.m"; sourceTree = "<group>"; };
+		DC74AA191C8ADD6C00D2C627 /* UIImage+ASColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASColor.h"; sourceTree = "<group>"; };
+		DC74AA1A1C8ADD6C00D2C627 /* UIImage+ASColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASColor.m"; sourceTree = "<group>"; };
 		DE4235BBF20918740A461D85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ASCocoaCategory_Tests-ASCocoaCategory/Info.plist"; sourceTree = "<group>"; };
 		E666556E5735F7A282BEA932 /* Pods-ASCocoaCategory_Example-ASCocoaCategory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASCocoaCategory_Example-ASCocoaCategory-prefix.pch"; sourceTree = "<group>"; };
 		E92C3CB5E936D7881DDEAAAC /* Pods-ASCocoaCategory_Example-ASCocoaCategory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASCocoaCategory_Example-ASCocoaCategory.xcconfig"; sourceTree = "<group>"; };
@@ -279,6 +291,8 @@
 		A0FA19D8022D2D4989B2FF0B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DC74AA131C8ADD6C00D2C627 /* UIColor */,
+				DC74AA181C8ADD6C00D2C627 /* UIImage */,
 				45767018677D8DCA8A17E255 /* UIView */,
 			);
 			path = UIKit;
@@ -320,6 +334,26 @@
 				13670FB0F8E3D7E20355F676 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC74AA131C8ADD6C00D2C627 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				DC74AA141C8ADD6C00D2C627 /* UIColor+ASCommon.h */,
+				DC74AA151C8ADD6C00D2C627 /* UIColor+ASCommon.m */,
+				DC74AA161C8ADD6C00D2C627 /* UIColor+ASHex.h */,
+				DC74AA171C8ADD6C00D2C627 /* UIColor+ASHex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		DC74AA181C8ADD6C00D2C627 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				DC74AA191C8ADD6C00D2C627 /* UIImage+ASColor.h */,
+				DC74AA1A1C8ADD6C00D2C627 /* UIImage+ASColor.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		ED09075D8331A7907C2AF81C /* Targets Support Files */ = {
@@ -384,7 +418,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC74AA1D1C8ADD6C00D2C627 /* UIColor+ASHex.h in Headers */,
 				C286D63A1B31A145ECF267FE /* Pods-ASCocoaCategory_Example-umbrella.h in Headers */,
+				DC74AA1F1C8ADD6C00D2C627 /* UIImage+ASColor.h in Headers */,
+				DC74AA1B1C8ADD6C00D2C627 /* UIColor+ASCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +638,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC74AA1E1C8ADD6C00D2C627 /* UIColor+ASHex.m in Sources */,
+				DC74AA1C1C8ADD6C00D2C627 /* UIColor+ASCommon.m in Sources */,
 				956FEF671E6EB394A4B8E445 /* Pods-ASCocoaCategory_Example-dummy.m in Sources */,
+				DC74AA201C8ADD6C00D2C627 /* UIImage+ASColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
