@@ -24,11 +24,11 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (UIImage *)as_imageWithPlaceHolder:(UIImage *)holder backGroundColor:(UIColor *)color size:(CGSize)size {
-    UIImage *backGroundImage = [self as_imageWithColor:color];
++ (UIImage *)as_imageWithPlaceHolder:(UIImage *)holder backgroundColor:(UIColor *)color size:(CGSize)size {
+    UIImage *backgroundImage = [self as_imageWithColor:color];
     
     UIGraphicsBeginImageContext(size);
-    [backGroundImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    [backgroundImage drawInRect:CGRectMake(0, 0, size.width, size.height)];
     [holder drawInRect:CGRectMake((size.width - holder.size.width)/2,(size.height - holder.size.height)/2, holder.size.width, holder.size.height)];
     UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

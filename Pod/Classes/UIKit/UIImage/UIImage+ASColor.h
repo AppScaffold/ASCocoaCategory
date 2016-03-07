@@ -13,11 +13,11 @@
 /**
  *
  */
-+ (UIImage *)as_imageWithPlaceHolder:(UIImage *)holder backGroundColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)as_imageWithColor:(UIColor *)color;
 
 /**
  *
  */
-+ (UIImage *)as_imageWithColor:(UIColor *)color;
++ (UIImage *)as_imageWithPlaceHolder:(UIImage *)holder backgroundColor:(UIColor *)color size:(CGSize)size;
 
 @end
