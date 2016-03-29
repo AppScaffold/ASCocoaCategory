@@ -13,7 +13,7 @@ A collection of UIKit and NSFoundation categories, make convenience methods to e
 你可以在测试工程中运行 `pod install` 安装相关 category
 
 
-## Installation
+## 安装
 
 你可以用pod 引入对应的工程
 
@@ -21,7 +21,7 @@ A collection of UIKit and NSFoundation categories, make convenience methods to e
 pod "ASCocoaCategory"
 ```
 
-## Contribute
+## 贡献
 
 欢迎大家将比较好的 category 贡献在这里，避免重复造轮子。
 
@@ -34,10 +34,10 @@ pod "ASCocoaCategory"
 - .h 的公共接口注释必须用英文，当你不知道如何描述时，请留空，待后面完善。
 - .m 实现文件中的注释非必须用英文，但一定要描述清楚方法的实现原理。
 
-## Author
+## 作者
 
 squarezw, oolongtea
 
-## License
+## 版权
 
 ASCocoaCategory is available under the MIT license. See the LICENSE file for more info.
