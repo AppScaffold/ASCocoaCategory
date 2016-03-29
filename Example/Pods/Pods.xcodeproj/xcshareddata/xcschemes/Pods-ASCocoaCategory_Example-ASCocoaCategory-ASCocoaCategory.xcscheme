@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "941FE39E83E4999D5456FDD8"
+               BlueprintIdentifier = "F1C1999C1FC6813434E94AED"
                BuildableName = "ASCocoaCategory.bundle"
                BlueprintName = "Pods-ASCocoaCategory_Example-ASCocoaCategory-ASCocoaCategory"
                ReferencedContainer = "container:Pods.xcodeproj">

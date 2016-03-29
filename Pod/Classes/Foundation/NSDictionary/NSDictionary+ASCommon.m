@@ -10,6 +10,7 @@
 
 @implementation NSDictionary (ASCommon)
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)as_containsObjectForKey:(id)key {
 	return [[self allKeys] containsObject:key];
 }
