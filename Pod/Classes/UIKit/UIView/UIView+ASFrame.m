@@ -6,7 +6,7 @@
 //  Copyright (c) 2016-2017 AppScaffold
 //
 
-#import "UIView+Frame.h"
+#import "UIView+ASFrame.h"
 
 @implementation UIView (ASFrame)
 

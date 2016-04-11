@@ -6,7 +6,7 @@
 //  Copyright (c) 2016-2017 AppScaffold
 //
 
-#import "NSDictionary+Common.h"
+#import "NSDictionary+ASCommon.h"
 
 @implementation NSDictionary (ASCommon)
 

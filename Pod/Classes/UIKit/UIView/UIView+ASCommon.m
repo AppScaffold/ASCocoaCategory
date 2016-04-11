@@ -6,7 +6,7 @@
 //  Copyright (c) 2016-2017 AppScaffold
 //
 
-#import "UIView+Common.h"
+#import "UIView+ASCommon.h"
 
 @implementation UIView (ASCommon)
 
