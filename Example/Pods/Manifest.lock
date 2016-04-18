@@ -6,9 +6,9 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ASCocoaCategory:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ASCocoaCategory: 3bddd1c93a1d3de29e2fe27200adb40209a6ecc0
+  ASCocoaCategory: 262bac53c4b68d93e4ef1c6da7487944d045e9c5
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

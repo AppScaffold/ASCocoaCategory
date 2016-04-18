@@ -2,7 +2,7 @@
   "name": "ASCocoaCategory",
   "version": "0.0.1",
   "summary": "A collection of UIKit and NSFoundation categories.",
-  "description": "    A collection of UIKit and NSFoundation categories, make convenience methods to easily use. [tags:cocoa,objective-c,ios,mac,category]\n",
+  "description": "A collection of UIKit and NSFoundation categories, make convenience methods to easily use. [tags:cocoa,objective-c,ios,mac,category]",
   "homepage": "https://github.com/AppScaffold/ASCocoaCategory.git",
   "license": "MIT",
   "authors": {

@@ -1,5 +1,5 @@
 //
-//  UIView+Common.m
+//  UIView+ASCommon.m
 //  AppScaffold Cocoa Category
 //
 //  Created by Square on 03/02/16.

@@ -5,6 +5,7 @@
 #import "UIColor+ASCommon.h"
 #import "UIColor+ASHex.h"
 #import "UIImage+ASColor.h"
+#import "UIView+ASBackground.h"
 #import "UIView+ASCommon.h"
 #import "UIView+ASFrame.h"
 

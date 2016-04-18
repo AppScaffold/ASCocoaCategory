@@ -1,6 +1,0 @@
-framework module ASCocoaCategory {
-  umbrella header "Pods-ASCocoaCategory_Example-ASCocoaCategory-umbrella.h"
-
-  export *
-  module * { export * }
-}

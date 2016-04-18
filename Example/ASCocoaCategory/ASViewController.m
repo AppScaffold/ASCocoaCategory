@@ -7,6 +7,7 @@
 //
 
 #import "ASViewController.h"
+#import "UIView+ASBackground.h"
 
 @interface ASViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view setASBackgroundImage:[UIImage imageNamed:@"icon_github"]];
 }
 
 - (void)didReceiveMemoryWarning

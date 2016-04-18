@@ -1,5 +1,5 @@
 //
-//  UIView+Frame.m
+//  UIView+ASFrame.m
 //  AppScaffold Cocoa Category
 //
 //  Created by Square on 03/02/16.

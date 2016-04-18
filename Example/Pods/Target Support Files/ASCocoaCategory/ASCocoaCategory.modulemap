@@ -1,0 +1,6 @@
+framework module ASCocoaCategory {
+  umbrella header "ASCocoaCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
