@@ -20,7 +20,7 @@
 
 @implementation UIView (ASBackground)
 
-- (UIImageView *)backgroundImageView
+- (UIImageView *)as_backgroundImageView
 {
     return [self __backgroundImageView];
 }
