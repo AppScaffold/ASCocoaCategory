@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    [self.view setASBackgroundImage:[UIImage imageNamed:@"icon_github"]];
+    [self.view as_setBackgroundImage:[UIImage imageNamed:@"icon_github"]];
 }
 
 - (void)didReceiveMemoryWarning

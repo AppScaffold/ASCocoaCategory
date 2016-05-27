@@ -11,13 +11,13 @@
 
 @interface UIView (ASBackground)
 
-@property (nonatomic, readonly) UIImageView * as_backgroundImageView;
+@property (nonatomic, readonly) UIImageView *as_backgroundImageView;
 
 /**
  *  Set a background image into UIView;
  *
  *  @param image The image object;
  */
-- (void)setASBackgroundImage:(UIImage *)image;
+- (void)as_setBackgroundImage:(UIImage *)image;
 
 @end

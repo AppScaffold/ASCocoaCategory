@@ -1,6 +1,6 @@
 //
 //  NSMutableDictionary+ASTypeConvert.m
-//  Taobao4iPad
+//  AppScaffold Cocoa Category
 //
 //  Created by Whirlwind on 15/4/8.
 //  Copyright (c) 2015年 AppScaffold. All rights reserved.

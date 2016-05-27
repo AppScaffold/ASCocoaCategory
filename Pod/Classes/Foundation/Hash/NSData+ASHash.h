@@ -23,13 +23,13 @@
  *
  * @return md5 hash of this data
  */
-@property (nonatomic, readonly) NSString *md5Hash;
+@property (nonatomic, readonly) NSString *as_md5Hash;
 
 /**
  * Calculate the SHA1 hash of this data using CC_SHA1.
  *
  * @return SHA1 hash of this data
  */
-@property (nonatomic, readonly) NSString *sha1Hash;
+@property (nonatomic, readonly) NSString *as_sha1Hash;
 
 @end

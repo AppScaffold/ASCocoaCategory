@@ -20,7 +20,7 @@
 @implementation NSData (ASHash)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSString *)md5Hash {
+- (NSString *)as_md5Hash {
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5([self bytes], (CC_LONG)[self length], result);
 
@@ -32,7 +32,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSString *)sha1Hash {
+- (NSString *)as_sha1Hash {
     unsigned char result[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1([self bytes], (CC_LONG)[self length], result);
 

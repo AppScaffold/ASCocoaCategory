@@ -15,13 +15,13 @@
  *
  * @return md5 hash of this string
  */
-@property (nonatomic, readonly) NSString *md5Hash;
+@property (nonatomic, readonly) NSString *as_md5Hash;
 
 /**
  * Calculate the SHA1 hash of this string using CommonCrypto CC_SHA1.
  *
  * @return NSString with SHA1 hash of this string
  */
-@property (nonatomic, readonly) NSString *sha1Hash;
+@property (nonatomic, readonly) NSString *as_sha1Hash;
 
 @end

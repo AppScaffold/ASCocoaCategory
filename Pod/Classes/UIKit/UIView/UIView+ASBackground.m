@@ -13,55 +13,42 @@
 @interface ASBackgroundImageView : UIImageView
 @end
 
-#pragma mark -
-
 @implementation ASBackgroundImageView
 @end
 
+#pragma mark -
+
 @implementation UIView (ASBackground)
 
-- (UIImageView *)as_backgroundImageView
-{
-    return [self __backgroundImageView];
-}
+- (UIImageView *)as_backgroundImageView {
+    ASBackgroundImageView *result = nil;
 
-- (ASBackgroundImageView *)__backgroundImageView
-{
-    ASBackgroundImageView * result = nil;
-    
-    for ( UIView * subView in self.subviews )
-    {
-        if ( [subView isKindOfClass:[ASBackgroundImageView class]] )
-        {
+    for (UIView *subView in self.subviews) {
+        if ([subView isKindOfClass:[ASBackgroundImageView class]]) {
             result = (ASBackgroundImageView *)subView;
             break;
         }
     }
-    
+
     return result;
 }
 
-- (void)setASBackgroundImage:(UIImage *)image
-{
-    if ( image )
-    {
-        ASBackgroundImageView * imageView = [self __backgroundImageView];
-        if ( nil == imageView )
-        {
+- (void)as_setBackgroundImage:(UIImage *)image {
+    if (image) {
+        UIImageView *imageView = [self as_backgroundImageView];
+        if (nil == imageView) {
             imageView = [[ASBackgroundImageView alloc] initWithFrame:self.bounds];
+            [imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
             [self addSubview:imageView];
             [self sendSubviewToBack:imageView];
         }
-        
+
         imageView.image = image;
         imageView.frame = self.bounds;
         [imageView setNeedsDisplay];
-    }
-    else
-    {
-        ASBackgroundImageView * imageView = [self __backgroundImageView];
-        if ( imageView )
-        {
+    } else {
+        UIImageView *imageView = [self as_backgroundImageView];
+        if (imageView) {
             [imageView removeFromSuperview];
         }
     }

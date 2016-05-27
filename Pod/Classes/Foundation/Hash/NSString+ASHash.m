@@ -12,12 +12,12 @@
 
 @implementation NSString (ASHash)
 
-- (NSString *)md5Hash {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] md5Hash];
+- (NSString *)as_md5Hash {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] as_md5Hash];
 }
 
-- (NSString *)sha1Hash {
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] sha1Hash];
+- (NSString *)as_sha1Hash {
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] as_sha1Hash];
 }
 
 @end

@@ -15,42 +15,42 @@
  *
  * Sets frame.origin.x = as_left
  */
-@property (nonatomic) CGFloat as_left;
+@property (nonatomic, setter=as_setLeft:) CGFloat as_left;
 
 /**
  * Shortcut for frame.origin.y
  */
-@property (nonatomic) CGFloat as_top;
+@property (nonatomic, setter=as_setTop:) CGFloat as_top;
 
 /**
  * Shortcut for frame.origin.x + frame.size.width
  */
-@property (nonatomic) CGFloat as_right;
+@property (nonatomic, setter=as_setRight:) CGFloat as_right;
 
 /**
  * Shortcut for frame.origin.y + frame.size.height
  */
-@property (nonatomic) CGFloat as_bottom;
+@property (nonatomic, setter=as_setBottom:) CGFloat as_bottom;
 
 /**
  * Shortcut for frame.size.width
  */
-@property (nonatomic) CGFloat as_width;
+@property (nonatomic, setter=as_setWidth:) CGFloat as_width;
 
 /**
  * Shortcut for frame.size.height
  */
-@property (nonatomic) CGFloat as_height;
+@property (nonatomic, setter=as_setHeight:) CGFloat as_height;
 
 /**
  * Shortcut for center.x
  */
-@property (nonatomic) CGFloat as_centerX;
+@property (nonatomic, setter=as_setCenterX:) CGFloat as_centerX;
 
 /**
  * Shortcut for center.y
  */
-@property (nonatomic) CGFloat as_centerY;
+@property (nonatomic, setter=as_setCenterY:) CGFloat as_centerY;
 
 /**
  * Return the x coordinate on the screen.
@@ -80,18 +80,28 @@
 /**
  * Shortcut for frame.origin
  */
-@property (nonatomic) CGPoint as_origin;
+@property (nonatomic, setter=as_setOrigin:) CGPoint as_origin;
 
 /**
  * Shortcut for frame.size
  */
-@property (nonatomic) CGSize as_size;
+@property (nonatomic, setter=as_setSize:) CGSize as_size;
 
 /**
  * Calculates the offset of this view from another view in screen coordinates.
  *
  * otherView should be a parent view of this view.
  */
-- (CGPoint)as_offsetFromView:(UIView*)otherView;
+- (CGPoint)as_offsetFromView:(UIView *)otherView;
+
+/**
+ *
+ */
+- (CGRect)as_frameToView:(UIView *)view;
+
+/**
+ * 
+ */
+- (void)as_setFrame:(CGRect)frame fromView:(UIView *)view;
 
 @end

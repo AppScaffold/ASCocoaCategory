@@ -7,5 +7,5 @@
 //
 
 #import "ASFoundationCategory.h"
-#import "UIView+ASCommon.h"
-#import "UIView+ASFrame.h"
+#import "ASCoreGraphicsCategory.h"
+#import "ASUIKitCategory.h"
