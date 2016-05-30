@@ -13,16 +13,21 @@
 /**
  *
  */
-+ (UIColor*)as_colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue;
++ (UIColor *)as_colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue;
 
 /**
  * Return color by hex value
  */
-+ (UIColor*)as_colorWithHex:(NSInteger)hexValue;
++ (UIColor *)as_colorWithHex:(NSInteger)hexValue;
 
 /**
- * 
+ * #RRGGBB or #RRGGBBAA
  */
-+ (UIColor*)as_colorWithHexString:(NSString*)hexString;
++ (UIColor *)as_colorWithHexString:(NSString *)hexString;
+
+/**
+ * #RRGGBB or #RRGGBBAA, the `AA` will be ignored.
+ */
++ (UIColor *)as_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
 @end

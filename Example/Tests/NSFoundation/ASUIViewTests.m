@@ -28,7 +28,7 @@
 - (void)testBackground {
     UIImage *image = [UIImage new];
     UIView *v;
-    XCTAssertNoThrow([v setASBackgroundImage:image]);
+    XCTAssertNoThrow([v as_setBackgroundImage:image]);
 }
 
 - (void)testPerformanceExample {

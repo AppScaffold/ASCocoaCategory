@@ -6,6 +6,6 @@
 //
 //
 
-#import "NSDictionary+ASCommon.h"
-#import "UIView+ASCommon.h"
-#import "UIView+ASFrame.h"
+#import "ASFoundationCategory.h"
+#import "ASCoreGraphicsCategory.h"
+#import "ASUIKitCategory.h"
