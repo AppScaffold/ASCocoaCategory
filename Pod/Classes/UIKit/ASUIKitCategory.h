@@ -24,6 +24,7 @@
 #import "UIButton+ASState.h"
 #import "UIButton+ASBackgroundColorForState.h"
 
+#import "UIColor+ASMacro.h"
 #import "UIColor+ASCommon.h"
 #import "UIColor+ASHex.h"
 #import "UIColor+ASHSV.h"
