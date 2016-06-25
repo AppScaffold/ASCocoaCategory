@@ -25,6 +25,8 @@
 		84F9250F6C1663F56F04C3ACAFF24B88 /* Pods-ASCocoaCategory_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3685BC25CA47297C99C57734F578E0 /* Pods-ASCocoaCategory_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD35447613B19A8B156D4EC02FF1389 /* Pods-ASCocoaCategory_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A736C969F9CAB41E3CAF938797E2D /* Pods-ASCocoaCategory_Tests-dummy.m */; };
 		9DEC54C4EA280A5FEA9D79930884E41C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
+		AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2012591D1E74160089FDDD /* UIView+ASViewController.h */; };
+		AB20125C1D1E74160089FDDD /* UIView+ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */; };
 		AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA501CF8BAC300B7C0B9 /* UIWindow+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4E1CF8BAC300B7C0B9 /* UIWindow+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,6 +182,8 @@
 		A4260CF45DFB98588EF0D4A456875FE0 /* Pods-ASCocoaCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASCocoaCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A671FF161871F6999CDFFF10A13723F6 /* Pods-ASCocoaCategory_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASCocoaCategory_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA7786CD5CCDD845C23B809F89B0F145 /* UIView+ASFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASFrame.m"; sourceTree = "<group>"; };
+		AB2012591D1E74160089FDDD /* UIView+ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASViewController.h"; sourceTree = "<group>"; };
+		AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASViewController.m"; sourceTree = "<group>"; };
 		AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASAutoresizingMask.h"; sourceTree = "<group>"; };
 		AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ASSize.h"; sourceTree = "<group>"; };
 		AB26FA4E1CF8BAC300B7C0B9 /* UIWindow+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ASMacro.h"; sourceTree = "<group>"; };
@@ -362,6 +366,8 @@
 				ABC4BECF1CF75FA900D552A6 /* UIView+ASAnimation.m */,
 				ABC4BED01CF75FA900D552A6 /* UIView+ASAnimationOnOff.h */,
 				ABC4BED11CF75FA900D552A6 /* UIView+ASAnimationOnOff.m */,
+				AB2012591D1E74160089FDDD /* UIView+ASViewController.h */,
+				AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -783,6 +789,7 @@
 				AB5DC4FA1CF0A659000AF2F1 /* NSString+ASHash.h in Headers */,
 				20C5E1F7593D60F9210EF1E5A2F67BC7 /* NSDictionary+ASCommon.h in Headers */,
 				AB5DC50E1CF0A659000AF2F1 /* NSDictionary+ASJSONSerialization.h in Headers */,
+				AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */,
 				AB5DC5271CF0C609000AF2F1 /* NSMutableArray+ASSafeSelector.h in Headers */,
 				AB5DC4F81CF0A659000AF2F1 /* NSData+ASHash.h in Headers */,
 				FD19A2A2562A024AD84E017DFC9F7E6D /* UIColor+ASCommon.h in Headers */,
@@ -979,6 +986,7 @@
 				F7A9C6A491685D6CE7411CF978D9E43E /* NSDictionary+ASCommon.m in Sources */,
 				AB5DC4FF1CF0A659000AF2F1 /* NSArray+ASJSONDeserialization.m in Sources */,
 				6D6BC89B149EAC99E197552087566880 /* UIColor+ASCommon.m in Sources */,
+				AB20125C1D1E74160089FDDD /* UIView+ASViewController.m in Sources */,
 				AB5DC4FB1CF0A659000AF2F1 /* NSString+ASHash.m in Sources */,
 				B704BCB6D711B008036069CB2CB13DD8 /* UIColor+ASHex.m in Sources */,
 				2E933590731C5438219EB33F2E51DB3A /* UIImage+ASColor.m in Sources */,
