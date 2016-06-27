@@ -24,6 +24,7 @@
 #import "UIButton+ASState.h"
 #import "UIButton+ASBackgroundColorForState.h"
 
+#import "UIColor+ASMacro.h"
 #import "UIColor+ASCommon.h"
 #import "UIColor+ASHex.h"
 #import "UIColor+ASHSV.h"
@@ -41,5 +42,6 @@
 #import "UIView+ASBounds.h"
 #import "UIView+ASAnimation.h"
 #import "UIView+ASAnimationOnOff.h"
+#import "UIView+ASViewController.h"
 
 #endif /* UIKitCategory_h */
