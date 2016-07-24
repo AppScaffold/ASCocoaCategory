@@ -17,7 +17,7 @@
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
     [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
     [textColor set];
-    [text drawInRect:CGRectIntegral(rect) withFont:font];
+    [text drawInRect:CGRectIntegral(rect) withAttributes:@{NSFontAttributeName: font}];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;

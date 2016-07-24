@@ -12,19 +12,19 @@
 @implementation NSData (ASJSONDeserialization)
 
 - (NSDictionary *)as_dictionaryFromJSONString {
-    return JSONDeserializeToClass(self, [NSDictionary class]);
+    return (NSDictionary *)JSONDeserializeToClass(self, [NSDictionary class]);
 }
 
 - (NSArray *)as_arrayFromJSONString {
-    return JSONDeserializeToClass(self, [NSArray class]);
+    return (NSArray *)JSONDeserializeToClass(self, [NSArray class]);
 }
 
 - (NSMutableArray *)as_mutableArrayFromJSONString {
-    return JSONDeserializeToClass(self, [NSMutableArray class]);
+    return (NSMutableArray *)JSONDeserializeToClass(self, [NSMutableArray class]);
 }
 
 - (NSMutableDictionary *)as_mutableDictionaryFromJSONString {
-    return JSONDeserializeToClass(self, [NSMutableDictionary class]);
+    return (NSMutableDictionary *)JSONDeserializeToClass(self, [NSMutableDictionary class]);
 }
 
 @end

@@ -13,22 +13,22 @@
 
 - (NSDictionary *)as_dictionaryFromJSONString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return JSONDeserializeToClass(data, [NSDictionary class]);
+    return (NSDictionary *)JSONDeserializeToClass(data, [NSDictionary class]);
 }
 
 - (NSArray *)as_arrayFromJSONString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return JSONDeserializeToClass(data, [NSArray class]);
+    return (NSArray *)JSONDeserializeToClass(data, [NSArray class]);
 }
 
 - (NSMutableArray *)as_mutableArrayFromJSONString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return JSONDeserializeToClass(data, [NSMutableArray class]);
+    return (NSMutableArray *)JSONDeserializeToClass(data, [NSMutableArray class]);
 }
 
 - (NSMutableDictionary *)as_mutableDictionaryFromJSONString {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return JSONDeserializeToClass(data, [NSMutableDictionary class]);
+    return (NSMutableDictionary *)JSONDeserializeToClass(data, [NSMutableDictionary class]);
 }
 
 @end
