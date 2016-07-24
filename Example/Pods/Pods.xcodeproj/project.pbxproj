@@ -25,6 +25,8 @@
 		84F9250F6C1663F56F04C3ACAFF24B88 /* Pods-ASCocoaCategory_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3685BC25CA47297C99C57734F578E0 /* Pods-ASCocoaCategory_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD35447613B19A8B156D4EC02FF1389 /* Pods-ASCocoaCategory_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A736C969F9CAB41E3CAF938797E2D /* Pods-ASCocoaCategory_Tests-dummy.m */; };
 		9DEC54C4EA280A5FEA9D79930884E41C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
+		AB15D95D1D448FF700D6E8B5 /* NSString+ASMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */; };
+		AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */; };
 		AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2012591D1E74160089FDDD /* UIView+ASViewController.h */; };
 		AB20125C1D1E74160089FDDD /* UIView+ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */; };
 		AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +184,8 @@
 		A4260CF45DFB98588EF0D4A456875FE0 /* Pods-ASCocoaCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASCocoaCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A671FF161871F6999CDFFF10A13723F6 /* Pods-ASCocoaCategory_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASCocoaCategory_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA7786CD5CCDD845C23B809F89B0F145 /* UIView+ASFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASFrame.m"; sourceTree = "<group>"; };
+		AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ASMD5.h"; sourceTree = "<group>"; };
+		AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ASMD5.m"; sourceTree = "<group>"; };
 		AB2012591D1E74160089FDDD /* UIView+ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASViewController.h"; sourceTree = "<group>"; };
 		AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASViewController.m"; sourceTree = "<group>"; };
 		AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASAutoresizingMask.h"; sourceTree = "<group>"; };
@@ -468,20 +472,21 @@
 		9AF1083AFAA883A474D3AE78E6F16E7C /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */,
 				AB5DC51C1CF0C418000AF2F1 /* ASFoundationCategory.h */,
 				AB5DC5541CF0D979000AF2F1 /* Math+ASMacro.h */,
-				AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */,
-				AB5DC55B1CF0DA16000AF2F1 /* NSBundle */,
-				AB5DC5561CF0D9A2000AF2F1 /* NSIndexPath */,
-				AB5DC52B1CF0C64E000AF2F1 /* TypeConvert */,
-				AB5DC51E1CF0C609000AF2F1 /* SafeSelector */,
 				AB5DC4C41CF0A659000AF2F1 /* Base64 */,
 				AB5DC4C91CF0A659000AF2F1 /* Hash */,
 				AB5DC4CE1CF0A659000AF2F1 /* JSON */,
+				AB15D95A1D448FCC00D6E8B5 /* MD5 */,
+				AB5DC55B1CF0DA16000AF2F1 /* NSBundle */,
+				4516C9026E69320D46954D8987F24093 /* NSDictionary */,
 				AB5DC4E51CF0A659000AF2F1 /* NSFileManager */,
+				AB5DC5561CF0D9A2000AF2F1 /* NSIndexPath */,
 				AB5DC4EA1CF0A659000AF2F1 /* NSString */,
 				AB5DC4F11CF0A659000AF2F1 /* runtime */,
-				4516C9026E69320D46954D8987F24093 /* NSDictionary */,
+				AB5DC51E1CF0C609000AF2F1 /* SafeSelector */,
+				AB5DC52B1CF0C64E000AF2F1 /* TypeConvert */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -501,6 +506,15 @@
 				ABC4BEDD1CF760F300D552A6 /* UIImage+ASTransform.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		AB15D95A1D448FCC00D6E8B5 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */,
+				AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */,
+			);
+			path = MD5;
 			sourceTree = "<group>";
 		};
 		AB26FA4B1CF8BAC300B7C0B9 /* UIScreen */ = {
@@ -804,6 +818,7 @@
 				AB5DC5291CF0C609000AF2F1 /* NSObject+ASSafeSelector.h in Headers */,
 				AB5DC5061CF0A659000AF2F1 /* NSMutableDictionary+ASJSONDeserialization.h in Headers */,
 				AB5DC5551CF0D979000AF2F1 /* Math+ASMacro.h in Headers */,
+				AB15D95D1D448FF700D6E8B5 /* NSString+ASMD5.h in Headers */,
 				AB5DC51D1CF0C418000AF2F1 /* ASFoundationCategory.h in Headers */,
 				AB5DC4FC1CF0A659000AF2F1 /* ASJSONDeserialization.h in Headers */,
 				ABC4BED41CF75FA900D552A6 /* UIView+ASAnimationOnOff.h in Headers */,
@@ -995,6 +1010,7 @@
 				AB5DC5091CF0A659000AF2F1 /* NSString+ASJSONDeserialization.m in Sources */,
 				ABC4BEF91CF7615B00D552A6 /* UITextField+ASFont.m in Sources */,
 				AB5DC5281CF0C609000AF2F1 /* NSMutableArray+ASSafeSelector.m in Sources */,
+				AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */,
 				ABC4BEE31CF760F300D552A6 /* UIImage+ASResizable.m in Sources */,
 				AB5DC5031CF0A659000AF2F1 /* NSDictionary+ASJSONDeserialization.m in Sources */,
 				AB5DC50B1CF0A659000AF2F1 /* ASJSONSerialization.m in Sources */,

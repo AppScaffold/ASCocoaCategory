@@ -19,6 +19,8 @@
 #import "NSData+ASBase64.h"
 #import "NSString+ASBase64.h"
 
+#import "NSString+ASMD5.h"
+
 #import "NSString+ASMacro.h"
 #import "NSString+ASNumeric.h"
 
