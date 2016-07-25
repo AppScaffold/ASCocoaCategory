@@ -25,9 +25,9 @@
 		84F9250F6C1663F56F04C3ACAFF24B88 /* Pods-ASCocoaCategory_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3685BC25CA47297C99C57734F578E0 /* Pods-ASCocoaCategory_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FD35447613B19A8B156D4EC02FF1389 /* Pods-ASCocoaCategory_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58A736C969F9CAB41E3CAF938797E2D /* Pods-ASCocoaCategory_Tests-dummy.m */; };
 		9DEC54C4EA280A5FEA9D79930884E41C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
-		AB15D95D1D448FF700D6E8B5 /* NSString+ASMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */; };
+		AB15D95D1D448FF700D6E8B5 /* NSString+ASMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */; };
-		AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2012591D1E74160089FDDD /* UIView+ASViewController.h */; };
+		AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2012591D1E74160089FDDD /* UIView+ASViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB20125C1D1E74160089FDDD /* UIView+ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */; };
 		AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +89,7 @@
 		AB5DC55A1CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC5581CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m */; };
 		AB5DC55D1CF0DA16000AF2F1 /* NSBundle+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB5DC55F1CF0DA6D000AF2F1 /* ASCommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEBF1CF753AD00D552A6 /* UIColor+ASHSV.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEC01CF753AD00D552A6 /* UIColor+ASHSV.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */; };
 		ABC4BEC61CF7556A00D552A6 /* UIButton+ASState.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEC21CF7556A00D552A6 /* UIButton+ASState.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -248,6 +249,7 @@
 		AB5DC5581CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+ASRange.m"; sourceTree = "<group>"; };
 		AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ASMacro.h"; sourceTree = "<group>"; };
 		AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommonMacro.h; sourceTree = "<group>"; };
+		ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASMacro.h"; sourceTree = "<group>"; };
 		ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASHSV.h"; sourceTree = "<group>"; };
 		ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASHSV.m"; sourceTree = "<group>"; };
 		ABC4BEC21CF7556A00D552A6 /* UIButton+ASState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ASState.h"; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 		8E9C4C1937225B295A5109EAEBE6D4F3 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
+				ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */,
 				D54B84A7573CB1284A7AD70794BBAA02 /* UIColor+ASCommon.h */,
 				D170A50D0D04F61B3149D87A290562D3 /* UIColor+ASCommon.m */,
 				D139327564577D43516FE1B4FE8B5E0E /* UIColor+ASHex.h */,
@@ -846,6 +849,7 @@
 				ABC4BEE91CF7614300D552A6 /* UIDevice+ASVersionCached.h in Headers */,
 				ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */,
 				ABC4BEDE1CF760F300D552A6 /* UIImage+ASDraw.h in Headers */,
+				ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */,
 				AB5DC5141CF0A659000AF2F1 /* NSString+ASNumeric.h in Headers */,
 				AB5DC5591CF0D9A2000AF2F1 /* NSIndexPath+ASRange.h in Headers */,
 				AB5DC5321CF0C64E000AF2F1 /* NSArray+ASTypeConvert.h in Headers */,
