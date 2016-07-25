@@ -13,12 +13,12 @@
 @implementation UIButton (ASBackgroundColorForState)
 
 - (NSMutableDictionary *)as_backgroundColorObjects {
-    NSMutableDictionary *dictionary = objc_getAssociatedObject(self, @selector(backgroundColorForState:));
+    NSMutableDictionary *dictionary = objc_getAssociatedObject(self, @selector(as_backgroundColorForState:));
     if (dictionary) {
         return dictionary;
     }
     dictionary = [NSMutableDictionary dictionary];
-    objc_setAssociatedObject(self, @selector(backgroundColorForState:), dictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(as_backgroundColorForState:), dictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     return dictionary;
 }
 
