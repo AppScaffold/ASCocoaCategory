@@ -44,4 +44,6 @@
 #import "UIView+ASAnimationOnOff.h"
 #import "UIView+ASViewController.h"
 
+#import "UITextField+ASPlaceholderColor.h"
+
 #endif /* UIKitCategory_h */
