@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
     A collection of UIKit and NSFoundation categories, make convenience methods to easily use. [tags:cocoa,objective-c,ios,mac,category]
                        DESC
 
-  s.homepage         = "https://github.com/AppScaffold/ASCocoaCategory.git"
+  s.homepage         = "https://github.com/Whirlwind/ASCocoaCategory.git"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "squarezw" => "square.zhao.wei@gmail.com" }
-  s.source           = { :git => "https://github.com/AppScaffold/ASCocoaCategory.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Whirlwind/ASCocoaCategory.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
