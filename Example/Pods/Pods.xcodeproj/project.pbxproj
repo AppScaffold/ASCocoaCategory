@@ -33,6 +33,10 @@
 		AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA501CF8BAC300B7C0B9 /* UIWindow+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4E1CF8BAC300B7C0B9 /* UIWindow+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA521CF8BF9300B7C0B9 /* ASUIKitCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA511CF8BBCE00B7C0B9 /* ASUIKitCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB40AB9F1D4CB50200DE1043 /* UIImage+ASImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40AB9D1D4CB50200DE1043 /* UIImage+ASImageEffects.h */; };
+		AB40ABA01D4CB50200DE1043 /* UIImage+ASImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40AB9E1D4CB50200DE1043 /* UIImage+ASImageEffects.m */; };
+		AB40ABA31D4CB5B500DE1043 /* UIView+ASBlurredImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40ABA11D4CB5B500DE1043 /* UIView+ASBlurredImage.h */; };
+		AB40ABA41D4CB5B500DE1043 /* UIView+ASBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40ABA21D4CB5B500DE1043 /* UIView+ASBlurredImage.m */; };
 		AB5DC4F41CF0A659000AF2F1 /* NSData+ASBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC4C51CF0A659000AF2F1 /* NSData+ASBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB5DC4F51CF0A659000AF2F1 /* NSData+ASBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC4C61CF0A659000AF2F1 /* NSData+ASBase64.m */; };
 		AB5DC4F61CF0A659000AF2F1 /* NSString+ASBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC4C71CF0A659000AF2F1 /* NSString+ASBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -195,6 +199,10 @@
 		AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ASSize.h"; sourceTree = "<group>"; };
 		AB26FA4E1CF8BAC300B7C0B9 /* UIWindow+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ASMacro.h"; sourceTree = "<group>"; };
 		AB26FA511CF8BBCE00B7C0B9 /* ASUIKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASUIKitCategory.h; sourceTree = "<group>"; };
+		AB40AB9D1D4CB50200DE1043 /* UIImage+ASImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASImageEffects.h"; sourceTree = "<group>"; };
+		AB40AB9E1D4CB50200DE1043 /* UIImage+ASImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASImageEffects.m"; sourceTree = "<group>"; };
+		AB40ABA11D4CB5B500DE1043 /* UIView+ASBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASBlurredImage.h"; sourceTree = "<group>"; };
+		AB40ABA21D4CB5B500DE1043 /* UIView+ASBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASBlurredImage.m"; sourceTree = "<group>"; };
 		AB5DC4C51CF0A659000AF2F1 /* NSData+ASBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ASBase64.h"; sourceTree = "<group>"; };
 		AB5DC4C61CF0A659000AF2F1 /* NSData+ASBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ASBase64.m"; sourceTree = "<group>"; };
 		AB5DC4C71CF0A659000AF2F1 /* NSString+ASBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ASBase64.h"; sourceTree = "<group>"; };
@@ -363,6 +371,8 @@
 		12EF2F04F0A4A3B088709CA418D51FA8 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				AB40ABA11D4CB5B500DE1043 /* UIView+ASBlurredImage.h */,
+				AB40ABA21D4CB5B500DE1043 /* UIView+ASBlurredImage.m */,
 				AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */,
 				9770527DD4A056A30CCEABC3459DC70B /* UIView+ASBackground.h */,
 				4E3E78644FBC3E3BE0FB06F4BB122071 /* UIView+ASBackground.m */,
@@ -501,6 +511,8 @@
 		AAC22A7CCC43A8C9C96E008F1AF38804 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				AB40AB9D1D4CB50200DE1043 /* UIImage+ASImageEffects.h */,
+				AB40AB9E1D4CB50200DE1043 /* UIImage+ASImageEffects.m */,
 				B338D22DE8FE2B146D37897A142EA2AA /* UIImage+ASColor.h */,
 				0CB78450191B59285BADFDE39044DC56 /* UIImage+ASColor.m */,
 				ABC4BED61CF760F300D552A6 /* UIImage+ASDraw.h */,
@@ -811,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5DC55F1CF0DA6D000AF2F1 /* ASCommonMacro.h in Headers */,
+				AB40AB9F1D4CB50200DE1043 /* UIImage+ASImageEffects.h in Headers */,
 				AB5DC5041CF0A659000AF2F1 /* NSMutableArray+ASJSONDeserialization.h in Headers */,
 				7BFFD53173565D09E6D11FF59D2A999E /* ASCocoaCategory-umbrella.h in Headers */,
 				AB5DC5341CF0C64E000AF2F1 /* NSDictionary+ASTypeConvert.h in Headers */,
@@ -830,6 +843,7 @@
 				AB5DC5101CF0A659000AF2F1 /* NSFileManager+ASPath.h in Headers */,
 				AB5DC51A1CF0A659000AF2F1 /* NSObject+ASPropertyAttributes.h in Headers */,
 				AB5DC5021CF0A659000AF2F1 /* NSDictionary+ASJSONDeserialization.h in Headers */,
+				AB40ABA31D4CB5B500DE1043 /* UIView+ASBlurredImage.h in Headers */,
 				AB5DC50C1CF0A659000AF2F1 /* NSArray+ASJSONSerialization.h in Headers */,
 				AB5DC55D1CF0DA16000AF2F1 /* NSBundle+ASMacro.h in Headers */,
 				AB5DC5291CF0C609000AF2F1 /* NSObject+ASSafeSelector.h in Headers */,
@@ -1043,6 +1057,7 @@
 				AB5DC5261CF0C609000AF2F1 /* NSArray+ASSafeSelector.m in Sources */,
 				AB5DC50D1CF0A659000AF2F1 /* NSArray+ASJSONSerialization.m in Sources */,
 				AB5DC50F1CF0A659000AF2F1 /* NSDictionary+ASJSONSerialization.m in Sources */,
+				AB40ABA41D4CB5B500DE1043 /* UIView+ASBlurredImage.m in Sources */,
 				508BC5F06B2B5F02D02E63204251A792 /* UIView+ASFrame.m in Sources */,
 				AB5DC51B1CF0A659000AF2F1 /* NSObject+ASPropertyAttributes.m in Sources */,
 				AB5DC53F1CF0D4F8000AF2F1 /* CGAffineTransform+UIInterfaceOrientation.m in Sources */,
@@ -1054,6 +1069,7 @@
 				AB5DC5151CF0A659000AF2F1 /* NSString+ASNumeric.m in Sources */,
 				AB5DC4F51CF0A659000AF2F1 /* NSData+ASBase64.m in Sources */,
 				ABC4BEEA1CF7614300D552A6 /* UIDevice+ASVersionCached.m in Sources */,
+				AB40ABA01D4CB50200DE1043 /* UIImage+ASImageEffects.m in Sources */,
 				AB5DC55A1CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m in Sources */,
 				ABC4BEC91CF7556A00D552A6 /* UIButton+ASBackgroundColorForState.m in Sources */,
 				ABC4BEF71CF7615B00D552A6 /* UILabel+ASFont.m in Sources */,

@@ -12,3 +12,6 @@
 CG_EXTERN CGAffineTransform CGAffineTransformForUIInterfaceOrientation(UIInterfaceOrientation orientation);
 CG_EXTERN UIInterfaceOrientation UIInterfaceOrientationForCGAffineTransform(CGAffineTransform transform);
 CG_EXTERN UIInterfaceOrientation UIInterfaceOrientationMakeTransform(UIInterfaceOrientation orientation, CGAffineTransform transform);
+
+CG_EXTERN CGFloat degreesForCGAffineTransform(CGAffineTransform t);
+CG_EXTERN CGFloat degreesForUIInterfaceOrientation(UIInterfaceOrientation orientation);
