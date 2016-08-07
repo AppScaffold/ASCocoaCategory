@@ -7,6 +7,7 @@
 //
 
 #import "NSFileManager+ASPath.h"
+#import <sys/stat.h>
 
 @implementation NSFileManager (ASPath)
 
@@ -73,6 +74,38 @@
         NSLog(@"Error excluding %@ from backup %@", [URL lastPathComponent], error);
     }
     return success;
+}
+
++ (unsigned long long int)as_fileSizeAtPath:(NSString *)filePath {
+    struct stat statbuf;
+    const char *cpath = [filePath fileSystemRepresentation];
+    if (cpath && stat(cpath, &statbuf) == 0) {
+        return statbuf.st_size;
+    }
+    return 0;
+}
+
++ (unsigned long long int)as_folderSizeAtPath:(NSString *)folderPath {
+    NSArray *filesArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:folderPath error:nil];
+    NSEnumerator *filesEnumerator = [filesArray objectEnumerator];
+    NSString *fileName;
+    unsigned long long int fileSize = 0;
+
+    while (fileName = [filesEnumerator nextObject]) {
+        fileSize += [self as_fileSizeAtPath:[folderPath stringByAppendingPathComponent:fileName]];
+    }
+
+    return fileSize;
+}
+
++ (NSString *)as_prettySizeStringForSize:(unsigned long long int)size {
+    NSArray *units = @[@"B", @"KB", @"MB", @"GB", @"TB"];
+    for (NSInteger i = 0; i < [units count]; i++) {
+        if (size < powl(1024, i + 1)) {
+            return [NSString stringWithFormat:@"%@ %@", [NSNumber numberWithUnsignedLongLong:size * 1.f / powl(1024, i)], units[i]];
+        }
+    }
+    return [NSString stringWithFormat:@"%ulld TB", size * 1.f / powl(1024, 4)];
 }
 
 @end

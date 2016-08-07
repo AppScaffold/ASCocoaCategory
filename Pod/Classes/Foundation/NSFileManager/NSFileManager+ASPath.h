@@ -70,4 +70,14 @@
  */
 + (BOOL)as_addSkipBackupAttributeToItemAtPath:(NSString *)filePathString;
 
+/** Get File Size
+ *
+ *  It's faster than -[NSFileManager attributesOfItemAtPath:error:]
+ */
++ (unsigned long long int)as_fileSizeAtPath:(NSString *)filePath;
+
++ (unsigned long long int)as_folderSizeAtPath:(NSString *)folderPath;
+
++ (NSString *)as_prettySizeStringForSize:(unsigned long long int)size;
+
 @end
