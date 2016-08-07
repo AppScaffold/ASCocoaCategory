@@ -89,6 +89,8 @@
 		AB5DC55A1CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC5581CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m */; };
 		AB5DC55D1CF0DA16000AF2F1 /* NSBundle+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB5DC55F1CF0DA6D000AF2F1 /* ASCommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */; };
 		ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEBF1CF753AD00D552A6 /* UIColor+ASHSV.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEC01CF753AD00D552A6 /* UIColor+ASHSV.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */; };
@@ -249,6 +251,8 @@
 		AB5DC5581CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+ASRange.m"; sourceTree = "<group>"; };
 		AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ASMacro.h"; sourceTree = "<group>"; };
 		AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommonMacro.h; sourceTree = "<group>"; };
+		AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ASPlaceholderColor.h"; sourceTree = "<group>"; };
+		AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASPlaceholderColor.m"; sourceTree = "<group>"; };
 		ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASMacro.h"; sourceTree = "<group>"; };
 		ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASHSV.h"; sourceTree = "<group>"; };
 		ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASHSV.m"; sourceTree = "<group>"; };
@@ -682,6 +686,15 @@
 			path = NSBundle;
 			sourceTree = "<group>";
 		};
+		AB649D021D56E01A009BDD37 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */,
+				AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		ABC4BEC11CF7554500D552A6 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +753,7 @@
 		BD8857F49125647884CDCDC003E4D29E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				AB649D021D56E01A009BDD37 /* UITextField */,
 				AB26FA511CF8BBCE00B7C0B9 /* ASUIKitCategory.h */,
 				AB26FA4B1CF8BAC300B7C0B9 /* UIScreen */,
 				AB26FA4D1CF8BAC300B7C0B9 /* UIWindow */,
@@ -831,6 +845,7 @@
 				ABC4BEEC1CF7614E00D552A6 /* UIGeometryExtends.h in Headers */,
 				ABC4BEE41CF760F300D552A6 /* UIImage+ASTransform.h in Headers */,
 				AB5DC4F61CF0A659000AF2F1 /* NSString+ASBase64.h in Headers */,
+				AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */,
 				AB5DC5391CF0C8FF000AF2F1 /* NSString+ASMacro.h in Headers */,
 				AB26FA501CF8BAC300B7C0B9 /* UIWindow+ASMacro.h in Headers */,
 				ABC4BEBF1CF753AD00D552A6 /* UIColor+ASHSV.h in Headers */,
@@ -1015,6 +1030,7 @@
 				ABC4BEF91CF7615B00D552A6 /* UITextField+ASFont.m in Sources */,
 				AB5DC5281CF0C609000AF2F1 /* NSMutableArray+ASSafeSelector.m in Sources */,
 				AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */,
+				AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */,
 				ABC4BEE31CF760F300D552A6 /* UIImage+ASResizable.m in Sources */,
 				AB5DC5031CF0A659000AF2F1 /* NSDictionary+ASJSONDeserialization.m in Sources */,
 				AB5DC50B1CF0A659000AF2F1 /* ASJSONSerialization.m in Sources */,
