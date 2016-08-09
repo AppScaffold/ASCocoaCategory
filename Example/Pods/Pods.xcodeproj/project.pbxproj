@@ -95,6 +95,8 @@
 		AB5DC55F1CF0DA6D000AF2F1 /* ASCommonMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */; };
+		AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB9CC1801D5A4B1500DA17E0 /* UIView+ASConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */; };
 		ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEBF1CF753AD00D552A6 /* UIColor+ASHSV.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEC01CF753AD00D552A6 /* UIColor+ASHSV.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */; };
@@ -261,6 +263,8 @@
 		AB5DC55E1CF0DA6D000AF2F1 /* ASCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCommonMacro.h; sourceTree = "<group>"; };
 		AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ASPlaceholderColor.h"; sourceTree = "<group>"; };
 		AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASPlaceholderColor.m"; sourceTree = "<group>"; };
+		AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASConvertRect.h"; sourceTree = "<group>"; };
+		AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASConvertRect.m"; sourceTree = "<group>"; };
 		ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASMacro.h"; sourceTree = "<group>"; };
 		ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASHSV.h"; sourceTree = "<group>"; };
 		ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASHSV.m"; sourceTree = "<group>"; };
@@ -388,6 +392,8 @@
 				ABC4BED11CF75FA900D552A6 /* UIView+ASAnimationOnOff.m */,
 				AB2012591D1E74160089FDDD /* UIView+ASViewController.h */,
 				AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */,
+				AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */,
+				AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -885,6 +891,7 @@
 				B92AC83D5405A1122D987D95865DFED1 /* UIImage+ASColor.h in Headers */,
 				AB26FA521CF8BF9300B7C0B9 /* ASUIKitCategory.h in Headers */,
 				3AF6DD6B6CF6A664C42AA293ACAC0866 /* UIView+ASBackground.h in Headers */,
+				AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */,
 				C81025699AC6A5F1A781CFC0E3957499 /* UIView+ASCommon.h in Headers */,
 				AB5DC5361CF0C64E000AF2F1 /* NSMutableDictionary+ASTypeConvert.h in Headers */,
 				7BD91043CA3082545056726B29BBBBDA /* UIView+ASFrame.h in Headers */,
@@ -1071,6 +1078,7 @@
 				ABC4BEEA1CF7614300D552A6 /* UIDevice+ASVersionCached.m in Sources */,
 				AB40ABA01D4CB50200DE1043 /* UIImage+ASImageEffects.m in Sources */,
 				AB5DC55A1CF0D9A2000AF2F1 /* NSIndexPath+ASRange.m in Sources */,
+				AB9CC1801D5A4B1500DA17E0 /* UIView+ASConvertRect.m in Sources */,
 				ABC4BEC91CF7556A00D552A6 /* UIButton+ASBackgroundColorForState.m in Sources */,
 				ABC4BEF71CF7615B00D552A6 /* UILabel+ASFont.m in Sources */,
 				ABC4BEC71CF7556A00D552A6 /* UIButton+ASState.m in Sources */,
