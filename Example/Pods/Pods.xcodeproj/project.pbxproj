@@ -97,6 +97,9 @@
 		AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */; };
 		AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB9CC1801D5A4B1500DA17E0 /* UIView+ASConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */; };
+		AB9CC18F1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC18D1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB9CC1901D5A595F00DA17E0 /* MKMapView+ASZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CC18E1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.m */; };
+		AB9CC1911D5A5B8F00DA17E0 /* ASMapKitCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC18C1D5A594C00DA17E0 /* ASMapKitCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEBF1CF753AD00D552A6 /* UIColor+ASHSV.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABC4BEC01CF753AD00D552A6 /* UIColor+ASHSV.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */; };
@@ -265,6 +268,9 @@
 		AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASPlaceholderColor.m"; sourceTree = "<group>"; };
 		AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASConvertRect.h"; sourceTree = "<group>"; };
 		AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASConvertRect.m"; sourceTree = "<group>"; };
+		AB9CC18C1D5A594C00DA17E0 /* ASMapKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASMapKitCategory.h; sourceTree = "<group>"; };
+		AB9CC18D1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ASZoomLevel.h"; sourceTree = "<group>"; };
+		AB9CC18E1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ASZoomLevel.m"; sourceTree = "<group>"; };
 		ABA546D91D45DA3F00A6D209 /* UIColor+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASMacro.h"; sourceTree = "<group>"; };
 		ABC4BEBD1CF753AD00D552A6 /* UIColor+ASHSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASHSV.h"; sourceTree = "<group>"; };
 		ABC4BEBE1CF753AD00D552A6 /* UIColor+ASHSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASHSV.m"; sourceTree = "<group>"; };
@@ -713,6 +719,24 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		AB9CC18A1D5A58DF00DA17E0 /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CC18D1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h */,
+				AB9CC18E1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.m */,
+			);
+			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		AB9CC18B1D5A58FE00DA17E0 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				AB9CC18A1D5A58DF00DA17E0 /* MKMapView */,
+				AB9CC18C1D5A594C00DA17E0 /* ASMapKitCategory.h */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
 		ABC4BEC11CF7554500D552A6 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +776,7 @@
 		BA8C40EB797B4BCE4716B90B15E0DE3B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AB9CC18B1D5A58FE00DA17E0 /* MapKit */,
 				69D28364A9C556CFDC41D54BD0A2D652 /* ASCocoaCategory.h */,
 				AB5DC53A1CF0D4F8000AF2F1 /* CoreGraphics */,
 				9AF1083AFAA883A474D3AE78E6F16E7C /* Foundation */,
@@ -830,6 +855,7 @@
 			files = (
 				AB5DC55F1CF0DA6D000AF2F1 /* ASCommonMacro.h in Headers */,
 				AB40AB9F1D4CB50200DE1043 /* UIImage+ASImageEffects.h in Headers */,
+				AB9CC1911D5A5B8F00DA17E0 /* ASMapKitCategory.h in Headers */,
 				AB5DC5041CF0A659000AF2F1 /* NSMutableArray+ASJSONDeserialization.h in Headers */,
 				7BFFD53173565D09E6D11FF59D2A999E /* ASCocoaCategory-umbrella.h in Headers */,
 				AB5DC5341CF0C64E000AF2F1 /* NSDictionary+ASTypeConvert.h in Headers */,
@@ -863,6 +889,7 @@
 				AB5DC5401CF0D4F8000AF2F1 /* ASCoreGraphicsCategory.h in Headers */,
 				ABC4BEFA1CF7615B00D552A6 /* UITextView+ASFont.h in Headers */,
 				ABC4BEEC1CF7614E00D552A6 /* UIGeometryExtends.h in Headers */,
+				AB9CC18F1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h in Headers */,
 				ABC4BEE41CF760F300D552A6 /* UIImage+ASTransform.h in Headers */,
 				AB5DC4F61CF0A659000AF2F1 /* NSString+ASBase64.h in Headers */,
 				AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */,
@@ -1067,6 +1094,7 @@
 				AB40ABA41D4CB5B500DE1043 /* UIView+ASBlurredImage.m in Sources */,
 				508BC5F06B2B5F02D02E63204251A792 /* UIView+ASFrame.m in Sources */,
 				AB5DC51B1CF0A659000AF2F1 /* NSObject+ASPropertyAttributes.m in Sources */,
+				AB9CC1901D5A595F00DA17E0 /* MKMapView+ASZoomLevel.m in Sources */,
 				AB5DC53F1CF0D4F8000AF2F1 /* CGAffineTransform+UIInterfaceOrientation.m in Sources */,
 				ABC4BED31CF75FA900D552A6 /* UIView+ASAnimation.m in Sources */,
 				ABC4BEDF1CF760F300D552A6 /* UIImage+ASDraw.m in Sources */,

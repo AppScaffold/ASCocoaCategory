@@ -9,3 +9,4 @@
 #import "ASFoundationCategory.h"
 #import "ASCoreGraphicsCategory.h"
 #import "ASUIKitCategory.h"
+#import "ASMapKitCategory.h"
