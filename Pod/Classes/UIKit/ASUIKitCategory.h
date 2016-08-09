@@ -43,6 +43,7 @@
 #import "UIView+ASAnimation.h"
 #import "UIView+ASAnimationOnOff.h"
 #import "UIView+ASViewController.h"
+#import "UIView+ASConvertRect.h"
 
 #import "UITextField+ASPlaceholderColor.h"
 
