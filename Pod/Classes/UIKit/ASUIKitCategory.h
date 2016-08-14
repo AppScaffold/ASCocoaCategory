@@ -34,6 +34,7 @@
 #import "UIImage+ASDrawText.h"
 #import "UIImage+ASResizable.h"
 #import "UIImage+ASTransform.h"
+#import "UIImage+ASImageEffects.h"
 
 #import "UIView+ASAutoresizingMask.h"
 #import "UIView+ASBackground.h"
@@ -44,6 +45,7 @@
 #import "UIView+ASAnimationOnOff.h"
 #import "UIView+ASViewController.h"
 #import "UIView+ASConvertRect.h"
+#import "UIView+ASBlurredImage.h"
 
 #import "UITextField+ASPlaceholderColor.h"
 

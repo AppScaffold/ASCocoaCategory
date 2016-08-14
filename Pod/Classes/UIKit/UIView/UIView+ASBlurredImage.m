@@ -24,23 +24,19 @@
   return [[self as_snapshotImage] as_applyBlurWithRadius:5 tintColor:nil saturationDeltaFactor:0 maskImage:nil];
 }
 
--(UIImage *)as_imageWithBlur {
-  return [[self as_snapshotImage] as_applyBlurWithRadius:5 tintColor:nil saturationDeltaFactor:0 maskImage:nil];
-}
-
--(UIImage *)imageWithDarkEffect {
+-(UIImage *)as_blurredImageWithDarkEffect {
   return [[self as_snapshotImage] as_applyDarkEffect];
 }
 
--(UIImage *)imageWithLightEffect {
+-(UIImage *)as_blurredImageWithLightEffect {
   return [[self as_snapshotImage] as_applyLightEffect];
 }
 
--(UIImage *)imageWithExtraLightEffect {
+-(UIImage *)as_blurredImageWithExtraLightEffect {
   return [[self as_snapshotImage] as_applyExtraLightEffect];
 }
 
--(UIImage *)imageWithTint:(UIColor*)color {
+-(UIImage *)as_blurredImageWithTint:(UIColor*)color {
   return [[self as_snapshotImage] as_applyTintEffectWithColor:color];
 }
 

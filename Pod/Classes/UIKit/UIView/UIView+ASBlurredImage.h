@@ -6,9 +6,8 @@
 
 @interface UIView (ASBlurredImage)
 -(UIImage *)as_blurredImage;
--(UIImage *)as_imageWithBlur;
--(UIImage *)as_imageWithDarkEffect;
--(UIImage *)as_imageWithLightEffect;
--(UIImage *)as_imageWithExtraLightEffect;
--(UIImage *)as_imageWithTint:(UIColor*)color;
+-(UIImage *)as_blurredImageWithDarkEffect;
+-(UIImage *)as_blurredImageWithLightEffect;
+-(UIImage *)as_blurredImageWithExtraLightEffect;
+-(UIImage *)as_blurredImageWithTint:(UIColor*)color;
 @end
