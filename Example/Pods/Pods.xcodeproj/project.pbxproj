@@ -33,9 +33,9 @@
 		AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4C1CF8BAC300B7C0B9 /* UIScreen+ASSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA501CF8BAC300B7C0B9 /* UIWindow+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA4E1CF8BAC300B7C0B9 /* UIWindow+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB26FA521CF8BF9300B7C0B9 /* ASUIKitCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA511CF8BBCE00B7C0B9 /* ASUIKitCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB40AB9F1D4CB50200DE1043 /* UIImage+ASImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40AB9D1D4CB50200DE1043 /* UIImage+ASImageEffects.h */; };
+		AB40AB9F1D4CB50200DE1043 /* UIImage+ASImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40AB9D1D4CB50200DE1043 /* UIImage+ASImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB40ABA01D4CB50200DE1043 /* UIImage+ASImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40AB9E1D4CB50200DE1043 /* UIImage+ASImageEffects.m */; };
-		AB40ABA31D4CB5B500DE1043 /* UIView+ASBlurredImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40ABA11D4CB5B500DE1043 /* UIView+ASBlurredImage.h */; };
+		AB40ABA31D4CB5B500DE1043 /* UIView+ASBlurredImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB40ABA11D4CB5B500DE1043 /* UIView+ASBlurredImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB40ABA41D4CB5B500DE1043 /* UIView+ASBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB40ABA21D4CB5B500DE1043 /* UIView+ASBlurredImage.m */; };
 		AB5DC4F41CF0A659000AF2F1 /* NSData+ASBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5DC4C51CF0A659000AF2F1 /* NSData+ASBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB5DC4F51CF0A659000AF2F1 /* NSData+ASBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC4C61CF0A659000AF2F1 /* NSData+ASBase64.m */; };
