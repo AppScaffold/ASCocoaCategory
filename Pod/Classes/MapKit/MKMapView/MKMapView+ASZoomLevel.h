@@ -13,8 +13,8 @@
 @property (nonatomic, readonly) NSUInteger as_zoomLevel;
 
 - (void)as_setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
-                  zoomLevel:(NSUInteger)zoomLevel
-                   animated:(BOOL)animated;
+                     zoomLevel:(NSUInteger)zoomLevel
+                      animated:(BOOL)animated;
 
 -(MKCoordinateRegion)as_regionWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
                                       andZoomLevel:(NSUInteger)zoomLevel;

@@ -77,9 +77,9 @@
 #pragma mark -
 #pragma mark Public methods
 
-- (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
-                  zoomLevel:(NSUInteger)zoomLevel
-                   animated:(BOOL)animated {
+- (void)as_setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
+                     zoomLevel:(NSUInteger)zoomLevel
+                      animated:(BOOL)animated {
     // clamp large numbers to 28
     zoomLevel = MIN(zoomLevel, 28);
 
