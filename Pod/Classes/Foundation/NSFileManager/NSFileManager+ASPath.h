@@ -74,10 +74,10 @@
  *
  *  It's faster than -[NSFileManager attributesOfItemAtPath:error:]
  */
-+ (unsigned long long int)as_fileSizeAtPath:(NSString *)filePath;
++ (off_t)as_fileSizeAtPath:(NSString *)filePath;
 
-+ (unsigned long long int)as_folderSizeAtPath:(NSString *)folderPath;
++ (off_t)as_folderSizeAtPath:(NSString *)folderPath;
 
-+ (NSString *)as_prettySizeStringForSize:(unsigned long long int)size;
++ (NSString *)as_prettySizeStringForSize:(off_t)size;
 
 @end
