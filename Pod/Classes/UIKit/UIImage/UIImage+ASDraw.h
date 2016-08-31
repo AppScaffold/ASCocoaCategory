@@ -26,4 +26,6 @@
 - (void)as_drawInRect:(CGRect)rect radius:(CGFloat)radius;
 - (void)as_drawInRect:(CGRect)rect radius:(CGFloat)radius contentMode:(UIViewContentMode)contentMode;
 
+- (UIImage *)as_drawImage:(UIImage *)inputImage inRect:(CGRect)frame;
+
 @end

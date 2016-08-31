@@ -161,4 +161,13 @@
     CGContextRestoreGState(context);
 }
 
+- (UIImage *)as_drawImage:(UIImage *)inputImage inRect:(CGRect)frame {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    [self drawInRect:CGRectMake(0.0, 0.0, self.size.width, self.size.height)];
+    [inputImage drawInRect:frame];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end
