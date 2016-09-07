@@ -170,4 +170,53 @@
     return newImage;
 }
 
+- (UIImage *)as_drawImageInCenter:(UIImage *)inputImage {
+    CGRect frame;
+    frame.size = inputImage.size;
+    frame.origin.x = (self.size.width - frame.size.width) / 2.f;
+    frame.origin.y = (self.size.height - frame.size.height) / 2.f;
+    return [self as_drawImage:inputImage inRect:frame];
+}
+
+- (UIImage *)as_imageWithMaskImage:(UIImage *)maskImage {
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+
+    CGImageRef maskImageRef = [maskImage CGImage];
+
+    // create a bitmap graphics context the size of the image
+    CGContextRef mainViewContentContext = CGBitmapContextCreate (NULL, maskImage.size.width, maskImage.size.height, 8, 0, colorSpace, kCGImageAlphaPremultipliedLast);
+    CGColorSpaceRelease(colorSpace);
+
+    if (mainViewContentContext==NULL)
+        return NULL;
+
+    CGFloat ratio = 0;
+
+    ratio = maskImage.size.width/ self.size.width;
+
+    if(ratio * self.size.height < maskImage.size.height) {
+        ratio = maskImage.size.height/ self.size.height;
+    }
+
+    CGRect rect1  = {{0, 0}, {maskImage.size.width, maskImage.size.height}};
+    CGRect rect2  = {{-((self.size.width*ratio)-maskImage.size.width)/2 , -((self.size.height*ratio)-maskImage.size.height)/2}, {self.size.width*ratio, self.size.height*ratio}};
+
+
+    CGContextClipToMask(mainViewContentContext, rect1, maskImageRef);
+    CGContextDrawImage(mainViewContentContext, rect2, self.CGImage);
+
+
+    // Create CGImageRef of the main view bitmap content, and then
+    // release that bitmap context
+    CGImageRef newImage = CGBitmapContextCreateImage(mainViewContentContext);
+    CGContextRelease(mainViewContentContext);
+
+    UIImage *theImage = [UIImage imageWithCGImage:newImage];
+
+    CGImageRelease(newImage);
+
+    // return the image
+    return theImage;
+}
+
 @end
