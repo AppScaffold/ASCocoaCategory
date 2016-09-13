@@ -15,4 +15,6 @@
  */
 - (UIImage *)as_transformWidth:(CGFloat)width height:(CGFloat)height rotate:(BOOL)rotate;
 
+- (UIImage *)as_imageWithCornerRadius:(CGFloat)cornerRadius;
+
 @end
