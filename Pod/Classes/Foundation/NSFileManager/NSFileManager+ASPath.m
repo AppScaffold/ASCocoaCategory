@@ -86,13 +86,21 @@
 }
 
 + (off_t)as_folderSizeAtPath:(NSString *)folderPath {
-    NSArray *filesArray = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:folderPath error:nil];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *filesArray = [fm contentsOfDirectoryAtPath:folderPath error:nil];
     NSEnumerator *filesEnumerator = [filesArray objectEnumerator];
     NSString *fileName;
+    NSString *path;
     off_t fileSize = 0;
+    BOOL isDirectory;
 
     while (fileName = [filesEnumerator nextObject]) {
-        fileSize += [self as_fileSizeAtPath:[folderPath stringByAppendingPathComponent:fileName]];
+        path = [folderPath stringByAppendingPathComponent:fileName];
+        if ([fm fileExistsAtPath:path isDirectory:&isDirectory] && isDirectory) {
+            fileSize += [self as_folderSizeAtPath:path];
+        } else {
+            fileSize += [self as_fileSizeAtPath:[folderPath stringByAppendingPathComponent:fileName]];
+        }
     }
 
     return fileSize;
