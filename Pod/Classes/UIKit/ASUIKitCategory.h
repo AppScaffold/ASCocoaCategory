@@ -46,6 +46,7 @@
 #import "UIView+ASViewController.h"
 #import "UIView+ASConvertRect.h"
 #import "UIView+ASBlurredImage.h"
+#import "UIView+ASXibLoader.h"
 
 #import "UITextField+ASPlaceholderColor.h"
 
