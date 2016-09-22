@@ -2,6 +2,7 @@
 #import "ASCommonMacro.h"
 
 #import "NSBundle+ASMacro.h"
+#import "NSBundle+ASLanguage.h"
 
 #import "NSObject+ASSafeSelector.h"
 #import "NSArray+ASSafeSelector.h"

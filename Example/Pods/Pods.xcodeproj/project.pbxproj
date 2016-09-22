@@ -27,6 +27,8 @@
 		9DEC54C4EA280A5FEA9D79930884E41C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
 		AB15D95D1D448FF700D6E8B5 /* NSString+ASMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */; };
+		AB15F0211D93078A00013A88 /* NSBundle+ASLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15F01F1D93078A00013A88 /* NSBundle+ASLanguage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB15F0221D93078A00013A88 /* NSBundle+ASLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15F0201D93078A00013A88 /* NSBundle+ASLanguage.m */; };
 		AB20125B1D1E74160089FDDD /* UIView+ASViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2012591D1E74160089FDDD /* UIView+ASViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB20125C1D1E74160089FDDD /* UIView+ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */; };
 		AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */ = {isa = PBXBuildFile; fileRef = AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -200,6 +202,8 @@
 		AA7786CD5CCDD845C23B809F89B0F145 /* UIView+ASFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASFrame.m"; sourceTree = "<group>"; };
 		AB15D95B1D448FF700D6E8B5 /* NSString+ASMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ASMD5.h"; sourceTree = "<group>"; };
 		AB15D95C1D448FF700D6E8B5 /* NSString+ASMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ASMD5.m"; sourceTree = "<group>"; };
+		AB15F01F1D93078A00013A88 /* NSBundle+ASLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ASLanguage.h"; sourceTree = "<group>"; };
+		AB15F0201D93078A00013A88 /* NSBundle+ASLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ASLanguage.m"; sourceTree = "<group>"; };
 		AB2012591D1E74160089FDDD /* UIView+ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASViewController.h"; sourceTree = "<group>"; };
 		AB20125A1D1E74160089FDDD /* UIView+ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASViewController.m"; sourceTree = "<group>"; };
 		AB26FA491CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASAutoresizingMask.h"; sourceTree = "<group>"; };
@@ -712,6 +716,8 @@
 			isa = PBXGroup;
 			children = (
 				AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */,
+				AB15F01F1D93078A00013A88 /* NSBundle+ASLanguage.h */,
+				AB15F0201D93078A00013A88 /* NSBundle+ASLanguage.m */,
 			);
 			path = NSBundle;
 			sourceTree = "<group>";
@@ -918,6 +924,7 @@
 				ABC4BEE91CF7614300D552A6 /* UIDevice+ASVersionCached.h in Headers */,
 				ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */,
 				ABC4BEDE1CF760F300D552A6 /* UIImage+ASDraw.h in Headers */,
+				AB15F0211D93078A00013A88 /* NSBundle+ASLanguage.h in Headers */,
 				ABA546DA1D45DA3F00A6D209 /* UIColor+ASMacro.h in Headers */,
 				AB5DC5141CF0A659000AF2F1 /* NSString+ASNumeric.h in Headers */,
 				AB5DC5591CF0D9A2000AF2F1 /* NSIndexPath+ASRange.h in Headers */,
@@ -1091,6 +1098,7 @@
 				AB5DC5031CF0A659000AF2F1 /* NSDictionary+ASJSONDeserialization.m in Sources */,
 				AB5DC50B1CF0A659000AF2F1 /* ASJSONSerialization.m in Sources */,
 				AB5DC5331CF0C64E000AF2F1 /* NSArray+ASTypeConvert.m in Sources */,
+				AB15F0221D93078A00013A88 /* NSBundle+ASLanguage.m in Sources */,
 				ABC4BED51CF75FA900D552A6 /* UIView+ASAnimationOnOff.m in Sources */,
 				AB5DC4F71CF0A659000AF2F1 /* NSString+ASBase64.m in Sources */,
 				1DCEE5BC8FC71311E50A2DCEC84E83A4 /* UIView+ASCommon.m in Sources */,
