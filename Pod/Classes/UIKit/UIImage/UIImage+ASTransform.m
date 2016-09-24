@@ -32,7 +32,7 @@
     size_t       bytesPerRow = destW * (CGImageGetBitsPerPixel(imageRef) >> 3);
     CGContextRef bitmap      = CGBitmapContextCreate(NULL, destW, destH,
                                                      CGImageGetBitsPerComponent(imageRef), bytesPerRow, CGImageGetColorSpace(imageRef),
-                                                     CGImageGetBitmapInfo(imageRef));
+                                                     kCGImageAlphaNoneSkipLast);
 
     if (rotate) {
         if (self.imageOrientation == UIImageOrientationDown) {
