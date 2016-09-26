@@ -179,14 +179,16 @@
 }
 
 - (UIImage *)as_imageWithMaskImage:(UIImage *)maskImage {
+    CGFloat scale = [[UIScreen mainScreen] scale];
+
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 
     CGImageRef maskImageRef = [maskImage CGImage];
 
     // create a bitmap graphics context the size of the image
-    CGContextRef mainViewContentContext = CGBitmapContextCreate (NULL, maskImage.size.width, maskImage.size.height, 8, 0, colorSpace, kCGImageAlphaPremultipliedLast);
+    CGContextRef mainViewContentContext = CGBitmapContextCreate (NULL, maskImage.size.width * scale, maskImage.size.height * scale, 8, maskImage.size.width * scale * 4, colorSpace, kCGImageAlphaPremultipliedLast);
     CGColorSpaceRelease(colorSpace);
-
+    CGContextScaleCTM(mainViewContentContext, scale, scale);
     if (mainViewContentContext==NULL)
         return NULL;
 
@@ -211,7 +213,7 @@
     CGImageRef newImage = CGBitmapContextCreateImage(mainViewContentContext);
     CGContextRelease(mainViewContentContext);
 
-    UIImage *theImage = [UIImage imageWithCGImage:newImage];
+    UIImage *theImage = [UIImage imageWithCGImage:newImage scale:scale orientation:self.imageOrientation];
 
     CGImageRelease(newImage);
 
