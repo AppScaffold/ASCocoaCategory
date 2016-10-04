@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#if __has_include("EXTRuntimeExtensions.h")
+#if __has_include(<libextobjc/EXTRuntimeExtensions.h>)
 // This category need pod 'libextobjc'
 
-#import "EXTRuntimeExtensions.h"
+#import <libextobjc/EXTRuntimeExtensions.h>
 
 @interface NSObject (PropertyAttributes)
 
