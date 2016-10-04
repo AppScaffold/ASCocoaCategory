@@ -3,6 +3,7 @@
 
 #import "NSBundle+ASMacro.h"
 #import "NSBundle+ASLanguage.h"
+#import "NSBundle+ASMainBundle.h"
 
 #import "NSObject+ASSafeSelector.h"
 #import "NSArray+ASSafeSelector.h"

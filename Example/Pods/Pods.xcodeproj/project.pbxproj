@@ -137,6 +137,8 @@
 		ABC4BEFC1CF7615B00D552A6 /* UIView+ASFont.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEF41CF7615B00D552A6 /* UIView+ASFont.h */; };
 		ABC4BEFD1CF7615B00D552A6 /* UIView+ASFont.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC4BEF51CF7615B00D552A6 /* UIView+ASFont.m */; };
 		ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEFE1CF7620C00D552A6 /* UIDevice+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCED9001DA10C10007D485B /* NSBundle+ASMainBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCED8FE1DA10C10007D485B /* NSBundle+ASMainBundle.h */; };
+		ABCED9011DA10C10007D485B /* NSBundle+ASMainBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCED8FF1DA10C10007D485B /* NSBundle+ASMainBundle.m */; };
 		B704BCB6D711B008036069CB2CB13DD8 /* UIColor+ASHex.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6B6F19663FFD7471F8B992D5C7563 /* UIColor+ASHex.m */; };
 		B92AC83D5405A1122D987D95865DFED1 /* UIImage+ASColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B338D22DE8FE2B146D37897A142EA2AA /* UIImage+ASColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C700FE34603BF7230E26BAD4B28CF5F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
@@ -312,6 +314,8 @@
 		ABC4BEF41CF7615B00D552A6 /* UIView+ASFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASFont.h"; sourceTree = "<group>"; };
 		ABC4BEF51CF7615B00D552A6 /* UIView+ASFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASFont.m"; sourceTree = "<group>"; };
 		ABC4BEFE1CF7620C00D552A6 /* UIDevice+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ASMacro.h"; sourceTree = "<group>"; };
+		ABCED8FE1DA10C10007D485B /* NSBundle+ASMainBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ASMainBundle.h"; sourceTree = "<group>"; };
+		ABCED8FF1DA10C10007D485B /* NSBundle+ASMainBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ASMainBundle.m"; sourceTree = "<group>"; };
 		B11B5728798790EDD32645C896D26A01 /* ASCocoaCategory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCocoaCategory-umbrella.h"; sourceTree = "<group>"; };
 		B338D22DE8FE2B146D37897A142EA2AA /* UIImage+ASColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASColor.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -718,6 +722,8 @@
 				AB5DC55C1CF0DA16000AF2F1 /* NSBundle+ASMacro.h */,
 				AB15F01F1D93078A00013A88 /* NSBundle+ASLanguage.h */,
 				AB15F0201D93078A00013A88 /* NSBundle+ASLanguage.m */,
+				ABCED8FE1DA10C10007D485B /* NSBundle+ASMainBundle.h */,
+				ABCED8FF1DA10C10007D485B /* NSBundle+ASMainBundle.m */,
 			);
 			path = NSBundle;
 			sourceTree = "<group>";
@@ -935,6 +941,7 @@
 				AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */,
 				C81025699AC6A5F1A781CFC0E3957499 /* UIView+ASCommon.h in Headers */,
 				AB5DC5361CF0C64E000AF2F1 /* NSMutableDictionary+ASTypeConvert.h in Headers */,
+				ABCED9001DA10C10007D485B /* NSBundle+ASMainBundle.h in Headers */,
 				7BD91043CA3082545056726B29BBBBDA /* UIView+ASFrame.h in Headers */,
 				AB5DC5251CF0C609000AF2F1 /* NSArray+ASSafeSelector.h in Headers */,
 			);
@@ -1095,6 +1102,7 @@
 				AB15D95E1D448FF700D6E8B5 /* NSString+ASMD5.m in Sources */,
 				AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */,
 				ABC4BEE31CF760F300D552A6 /* UIImage+ASResizable.m in Sources */,
+				ABCED9011DA10C10007D485B /* NSBundle+ASMainBundle.m in Sources */,
 				AB5DC5031CF0A659000AF2F1 /* NSDictionary+ASJSONDeserialization.m in Sources */,
 				AB5DC50B1CF0A659000AF2F1 /* ASJSONSerialization.m in Sources */,
 				AB5DC5331CF0C64E000AF2F1 /* NSArray+ASTypeConvert.m in Sources */,
