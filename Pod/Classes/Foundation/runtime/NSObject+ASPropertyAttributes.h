@@ -9,14 +9,15 @@
 #import <Foundation/Foundation.h>
 
 #if __has_include(<libextobjc/EXTRuntimeExtensions.h>)
-// This category need pod 'libextobjc'
-
 #import <libextobjc/EXTRuntimeExtensions.h>
+#endif
 
 @interface NSObject (PropertyAttributes)
 
-+ (ext_propertyAttributes *)copyPropertyAttributesByName:(NSString *)name;
++ (NSArray *)as_allPropertyNames;
+
+#if __has_include(<libextobjc/EXTRuntimeExtensions.h>)
++ (ext_propertyAttributes *)as_copyPropertyAttributesByName:(NSString *)name;
+#endif
 
 @end
-
-#endif

@@ -7,14 +7,29 @@
 //
 
 #import "NSObject+ASPropertyAttributes.h"
-
-#if __has_include("EXTRuntimeExtensions.h")
+#import <objc/runtime.h>
 
 @import UIKit;
 
 @implementation NSObject (PropertyAttributes)
 
-+ (ext_propertyAttributes *)copyPropertyAttributesByName:(NSString *)name {
++ (NSArray *)as_allPropertyNames {
+    unsigned count;
+    objc_property_t *properties = class_copyPropertyList(self, &count);
+    NSMutableArray *rv = [NSMutableArray array];
+    unsigned i;
+    for (i = 0; i < count; i++) {
+        objc_property_t property = properties[i];
+        NSString *name = [NSString stringWithUTF8String:property_getName(property)];
+        [rv addObject:name];
+    }
+    free(properties);
+    return rv;
+}
+
+#if __has_include(<libextobjc/EXTRuntimeExtensions.h>)
+
++ (ext_propertyAttributes *)as_copyPropertyAttributesByName:(NSString *)name {
     const char      *cName   = [name UTF8String];
     objc_property_t property = class_getProperty(self, cName);
     if (property) {
@@ -320,5 +335,6 @@
     return NULL;
 }
 
-@end
 #endif
+
+@end
