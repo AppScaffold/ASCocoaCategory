@@ -11,5 +11,6 @@
 @interface NSIndexPath (ASRange)
 
 + (NSArray *)as_indexPathsForItemRange:(NSRange)range inSection:(NSInteger)section NS_AVAILABLE_IOS(6_0);
++ (NSArray *)as_indexPathsForRowRange:(NSRange)range inSection:(NSInteger)section NS_AVAILABLE_IOS(6_0);
 
 @end
