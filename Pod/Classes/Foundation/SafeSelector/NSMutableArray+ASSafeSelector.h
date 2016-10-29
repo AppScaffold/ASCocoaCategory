@@ -10,6 +10,7 @@
 
 @interface NSMutableArray (ASSafeSelector)
 
+- (id)as_objectAtIndex:(NSInteger)index;
 - (BOOL)as_addObject:(id)anObject;
 - (BOOL)as_insertObject:(id)anObject atIndex:(NSUInteger)index;
 - (BOOL)as_removeObjectAtIndex:(NSUInteger)index;

@@ -11,6 +11,13 @@
 
 @implementation NSMutableArray (ASSafeSelector)
 
+- (id)as_objectAtIndex:(NSInteger)index {
+    if ([self count] > index) {
+        return [self objectAtIndex:index];
+    }
+    return nil;
+}
+
 - (BOOL)as_addObject:(id)anObject {
     if (anObject) {
         [self addObject:anObject];
