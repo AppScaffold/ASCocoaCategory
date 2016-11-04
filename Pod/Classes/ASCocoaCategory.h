@@ -10,3 +10,4 @@
 #import "ASCoreGraphicsCategory.h"
 #import "ASUIKitCategory.h"
 #import "ASMapKitCategory.h"
+#import "PhotosCategory.h"
