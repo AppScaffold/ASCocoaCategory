@@ -99,6 +99,7 @@
 		AB60BA621DCD08AC00EA8B8F /* PHAsset+ASImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB60BA601DCD08AC00EA8B8F /* PHAsset+ASImage.m */; };
 		AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */; };
+		AB92625D1DCC62E900A4F34B /* CGGeometryExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = AB92625C1DCC62E900A4F34B /* CGGeometryExtern.m */; };
 		AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB9CC1801D5A4B1500DA17E0 /* UIView+ASConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */; };
 		AB9CC18F1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC18D1D5A595F00DA17E0 /* MKMapView+ASZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -279,6 +280,8 @@
 		AB60BA631DCD097A00EA8B8F /* PhotosCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosCategory.h; sourceTree = "<group>"; };
 		AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ASPlaceholderColor.h"; sourceTree = "<group>"; };
 		AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASPlaceholderColor.m"; sourceTree = "<group>"; };
+		AB92625B1DCC625B00A4F34B /* CGGeometryExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGeometryExtern.h; sourceTree = "<group>"; };
+		AB92625C1DCC62E900A4F34B /* CGGeometryExtern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGGeometryExtern.m; sourceTree = "<group>"; };
 		AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASConvertRect.h"; sourceTree = "<group>"; };
 		AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASConvertRect.m"; sourceTree = "<group>"; };
 		AB9CC18C1D5A594C00DA17E0 /* ASMapKitCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASMapKitCategory.h; sourceTree = "<group>"; };
@@ -708,6 +711,8 @@
 				AB5DC53B1CF0D4F8000AF2F1 /* CGAffineTransform+UIInterfaceOrientation.h */,
 				AB5DC53C1CF0D4F8000AF2F1 /* CGAffineTransform+UIInterfaceOrientation.m */,
 				AB5DC53D1CF0D4F8000AF2F1 /* ASCoreGraphicsCategory.h */,
+				AB92625B1DCC625B00A4F34B /* CGGeometryExtern.h */,
+				AB92625C1DCC62E900A4F34B /* CGGeometryExtern.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1131,6 +1136,7 @@
 				ABC4BECD1CF75E7000D552A6 /* UIView+ASBounds.m in Sources */,
 				AB5DC4FD1CF0A659000AF2F1 /* ASJSONDeserialization.m in Sources */,
 				AB5DC5261CF0C609000AF2F1 /* NSArray+ASSafeSelector.m in Sources */,
+				AB92625D1DCC62E900A4F34B /* CGGeometryExtern.m in Sources */,
 				AB5DC50D1CF0A659000AF2F1 /* NSArray+ASJSONSerialization.m in Sources */,
 				AB5DC50F1CF0A659000AF2F1 /* NSDictionary+ASJSONSerialization.m in Sources */,
 				AB40ABA41D4CB5B500DE1043 /* UIView+ASBlurredImage.m in Sources */,
