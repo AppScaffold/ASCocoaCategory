@@ -10,5 +10,6 @@
 #define PhotosCategory_h
 
 #import "PHAsset+ASImage.h"
+#import "PHAssetCollection+ASAlbum.h"
 
 #endif /* PhotosCategory_h */

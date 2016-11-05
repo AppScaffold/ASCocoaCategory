@@ -142,6 +142,8 @@
 		ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC4BEFE1CF7620C00D552A6 /* UIDevice+ASMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABCED9001DA10C10007D485B /* NSBundle+ASMainBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCED8FE1DA10C10007D485B /* NSBundle+ASMainBundle.h */; };
 		ABCED9011DA10C10007D485B /* NSBundle+ASMainBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCED8FF1DA10C10007D485B /* NSBundle+ASMainBundle.m */; };
+		ABFBFA651DCE6058000E6469 /* PHAssetCollection+ASAlbum.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFBFA631DCE6058000E6469 /* PHAssetCollection+ASAlbum.h */; };
+		ABFBFA661DCE6058000E6469 /* PHAssetCollection+ASAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFBFA641DCE6058000E6469 /* PHAssetCollection+ASAlbum.m */; };
 		B704BCB6D711B008036069CB2CB13DD8 /* UIColor+ASHex.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF6B6F19663FFD7471F8B992D5C7563 /* UIColor+ASHex.m */; };
 		B92AC83D5405A1122D987D95865DFED1 /* UIImage+ASColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B338D22DE8FE2B146D37897A142EA2AA /* UIImage+ASColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C700FE34603BF7230E26BAD4B28CF5F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973BE4DFCC535F9366CE474D5ECA2AA1 /* Foundation.framework */; };
@@ -324,6 +326,8 @@
 		ABC4BEFE1CF7620C00D552A6 /* UIDevice+ASMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ASMacro.h"; sourceTree = "<group>"; };
 		ABCED8FE1DA10C10007D485B /* NSBundle+ASMainBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ASMainBundle.h"; sourceTree = "<group>"; };
 		ABCED8FF1DA10C10007D485B /* NSBundle+ASMainBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ASMainBundle.m"; sourceTree = "<group>"; };
+		ABFBFA631DCE6058000E6469 /* PHAssetCollection+ASAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+ASAlbum.h"; sourceTree = "<group>"; };
+		ABFBFA641DCE6058000E6469 /* PHAssetCollection+ASAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+ASAlbum.m"; sourceTree = "<group>"; };
 		B11B5728798790EDD32645C896D26A01 /* ASCocoaCategory-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCocoaCategory-umbrella.h"; sourceTree = "<group>"; };
 		B338D22DE8FE2B146D37897A142EA2AA /* UIImage+ASColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASColor.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -744,6 +748,8 @@
 				AB60BA5F1DCD08AC00EA8B8F /* PHAsset+ASImage.h */,
 				AB60BA601DCD08AC00EA8B8F /* PHAsset+ASImage.m */,
 				AB60BA631DCD097A00EA8B8F /* PhotosCategory.h */,
+				ABFBFA631DCE6058000E6469 /* PHAssetCollection+ASAlbum.h */,
+				ABFBFA641DCE6058000E6469 /* PHAssetCollection+ASAlbum.m */,
 			);
 			path = Photos;
 			sourceTree = "<group>";
@@ -950,6 +956,7 @@
 				AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */,
 				AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */,
 				ABC4BEE91CF7614300D552A6 /* UIDevice+ASVersionCached.h in Headers */,
+				ABFBFA651DCE6058000E6469 /* PHAssetCollection+ASAlbum.h in Headers */,
 				ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */,
 				ABC4BEDE1CF760F300D552A6 /* UIImage+ASDraw.h in Headers */,
 				AB15F0211D93078A00013A88 /* NSBundle+ASLanguage.h in Headers */,
@@ -1131,6 +1138,7 @@
 				AB5DC5331CF0C64E000AF2F1 /* NSArray+ASTypeConvert.m in Sources */,
 				AB15F0221D93078A00013A88 /* NSBundle+ASLanguage.m in Sources */,
 				ABC4BED51CF75FA900D552A6 /* UIView+ASAnimationOnOff.m in Sources */,
+				ABFBFA661DCE6058000E6469 /* PHAssetCollection+ASAlbum.m in Sources */,
 				AB5DC4F71CF0A659000AF2F1 /* NSString+ASBase64.m in Sources */,
 				1DCEE5BC8FC71311E50A2DCEC84E83A4 /* UIView+ASCommon.m in Sources */,
 				ABC4BECD1CF75E7000D552A6 /* UIView+ASBounds.m in Sources */,
