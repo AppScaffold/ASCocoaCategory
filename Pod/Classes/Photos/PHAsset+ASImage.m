@@ -27,21 +27,21 @@
     return image;
 }
 
-- (void)as_requestImageWithResultHandler:(void (^)(UIImage *__nullable result, NSDictionary *__nullable info))resultHandler {
+- (PHImageRequestID)as_requestImageWithResultHandler:(void (^)(UIImage *__nullable result, NSDictionary *__nullable info))resultHandler {
     PHImageRequestOptions *requestOptions = [[PHImageRequestOptions alloc] init];
     requestOptions.resizeMode   = PHImageRequestOptionsResizeModeExact;
     requestOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-    [self as_requestImageWithOptions:requestOptions resultHandler:resultHandler];
+    return [self as_requestImageWithOptions:requestOptions resultHandler:resultHandler];
 }
 
-- (void)as_requestImageWithOptions:(PHImageRequestOptions *)requestOptions
+- (PHImageRequestID)as_requestImageWithOptions:(PHImageRequestOptions *)requestOptions
                   resultHandler:(void (^)(UIImage *__nullable result, NSDictionary *__nullable info))resultHandler {
     PHImageManager *manager = [PHImageManager defaultManager];
-    [manager requestImageForAsset:self
-                       targetSize:PHImageManagerMaximumSize
-                      contentMode:PHImageContentModeDefault
-                          options:requestOptions
-                    resultHandler:resultHandler];
+    return [manager requestImageForAsset:self
+                              targetSize:PHImageManagerMaximumSize
+                             contentMode:PHImageContentModeDefault
+                                 options:requestOptions
+                           resultHandler:resultHandler];
 }
 
 #pragma mark - thumb
@@ -62,23 +62,23 @@
     return image;
 }
 
-- (void)as_requestThumbImageWithSize:(CGSize)size
+- (PHImageRequestID)as_requestThumbImageWithSize:(CGSize)size
                        resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler {
     PHImageRequestOptions *requestOptions = [[PHImageRequestOptions alloc] init];
     requestOptions.resizeMode   = PHImageRequestOptionsResizeModeExact;
     requestOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-    [self as_requestThumbImageWithOptions:requestOptions size:size resultHandler:resultHandler];
+    return [self as_requestThumbImageWithOptions:requestOptions size:size resultHandler:resultHandler];
 }
 
-- (void)as_requestThumbImageWithOptions:(PHImageRequestOptions *)requestOptions
+- (PHImageRequestID)as_requestThumbImageWithOptions:(PHImageRequestOptions *)requestOptions
                                 size:(CGSize)size
                         resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler {
     PHImageManager *manager = [PHImageManager defaultManager];
-    [manager requestImageForAsset:self
-                       targetSize:CGSizeScale(size, [UIScreen mainScreen].scale)
-                      contentMode:PHImageContentModeAspectFill
-                          options:requestOptions
-                    resultHandler:resultHandler];
+    return [manager requestImageForAsset:self
+                              targetSize:CGSizeScale(size, [UIScreen mainScreen].scale)
+                             contentMode:PHImageContentModeAspectFill
+                                 options:requestOptions
+                           resultHandler:resultHandler];
 
 }
 
