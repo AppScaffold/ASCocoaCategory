@@ -50,4 +50,6 @@
 
 #import "UITextField+ASPlaceholderColor.h"
 
+#import "UISearchBar+ASPrivateProperty.h"
+
 #endif /* UIKitCategory_h */

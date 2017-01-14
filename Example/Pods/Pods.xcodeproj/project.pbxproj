@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A47CF3F144A1FF584F085502F8293DE /* ASCocoaCategory.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B6176C7F30E277A2C052F4C5513229B /* ASCocoaCategory.bundle */; };
 		1DCEE5BC8FC71311E50A2DCEC84E83A4 /* UIView+ASCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E4D363DC448426FD428D92D53C14C4 /* UIView+ASCommon.m */; };
 		20C5E1F7593D60F9210EF1E5A2F67BC7 /* NSDictionary+ASCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BB4B49B6E46FFA758DAEF63705F012 /* NSDictionary+ASCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E933590731C5438219EB33F2E51DB3A /* UIImage+ASColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB78450191B59285BADFDE39044DC56 /* UIImage+ASColor.m */; };
@@ -99,6 +98,8 @@
 		AB60BA621DCD08AC00EA8B8F /* PHAsset+ASImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB60BA601DCD08AC00EA8B8F /* PHAsset+ASImage.m */; };
 		AB649D051D56E052009BDD37 /* UITextField+ASPlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB649D061D56E052009BDD37 /* UITextField+ASPlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */; };
+		AB64DE261E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = AB64DE241E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.h */; };
+		AB64DE271E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64DE251E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.m */; };
 		AB92625D1DCC62E900A4F34B /* CGGeometryExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = AB92625C1DCC62E900A4F34B /* CGGeometryExtern.m */; };
 		AB9CC17F1D5A4B1500DA17E0 /* UIView+ASConvertRect.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB9CC1801D5A4B1500DA17E0 /* UIView+ASConvertRect.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CC17E1D5A4B1500DA17E0 /* UIView+ASConvertRect.m */; };
@@ -154,13 +155,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C3DDDC7AB07AEF02C03ED91B8B2A01A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 03AB195BCAA1C53FD4B7975D60FBAE6E;
-			remoteInfo = "ASCocoaCategory-ASCocoaCategory";
-		};
 		DBA09749AE708657E3691F97075848B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -193,7 +187,6 @@
 		606007A6659D1D9C4E101B67672AFDB0 /* NSDictionary+ASCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ASCommon.m"; sourceTree = "<group>"; };
 		63E4D363DC448426FD428D92D53C14C4 /* UIView+ASCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASCommon.m"; sourceTree = "<group>"; };
 		69D28364A9C556CFDC41D54BD0A2D652 /* ASCocoaCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASCocoaCategory.h; sourceTree = "<group>"; };
-		6B6176C7F30E277A2C052F4C5513229B /* ASCocoaCategory.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASCocoaCategory.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E144F05F9856E4CBFF18AB59276609 /* ASCocoaCategory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCocoaCategory-prefix.pch"; sourceTree = "<group>"; };
 		77B68D23E6102A1CEF700B99A16CFEF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7930FE2DF72CECAC71F482799A130F67 /* ASCocoaCategory-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ASCocoaCategory-Private.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +275,8 @@
 		AB60BA631DCD097A00EA8B8F /* PhotosCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosCategory.h; sourceTree = "<group>"; };
 		AB649D031D56E052009BDD37 /* UITextField+ASPlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ASPlaceholderColor.h"; sourceTree = "<group>"; };
 		AB649D041D56E052009BDD37 /* UITextField+ASPlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASPlaceholderColor.m"; sourceTree = "<group>"; };
+		AB64DE241E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+ASPrivateProperty.h"; sourceTree = "<group>"; };
+		AB64DE251E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+ASPrivateProperty.m"; sourceTree = "<group>"; };
 		AB92625B1DCC625B00A4F34B /* CGGeometryExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGeometryExtern.h; sourceTree = "<group>"; };
 		AB92625C1DCC62E900A4F34B /* CGGeometryExtern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGGeometryExtern.m; sourceTree = "<group>"; };
 		AB9CC17D1D5A4B1500DA17E0 /* UIView+ASConvertRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ASConvertRect.h"; sourceTree = "<group>"; };
@@ -355,13 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C700FE34603BF7230E26BAD4B28CF5F3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A58808A956BF74C1C829181AB61C3BD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +751,15 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		AB64DE231E2A850D00B69A2B /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				AB64DE241E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.h */,
+				AB64DE251E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.m */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
 		AB9CC18A1D5A58DF00DA17E0 /* MKMapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +838,7 @@
 		BD8857F49125647884CDCDC003E4D29E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				AB64DE231E2A850D00B69A2B /* UISearchBar */,
 				AB649D021D56E01A009BDD37 /* UITextField */,
 				AB26FA511CF8BBCE00B7C0B9 /* ASUIKitCategory.h */,
 				AB26FA4B1CF8BAC300B7C0B9 /* UIScreen */,
@@ -859,7 +857,6 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B6176C7F30E277A2C052F4C5513229B /* ASCocoaCategory.bundle */,
 				CAAF3F56C63B9BDECB4ABA21AA84A02A /* ASCocoaCategory.framework */,
 				0D045B9C5398D5142955B1AFC42D5DC1 /* Pods_ASCocoaCategory_Example.framework */,
 				47020B0C6FD314B895E94070FB9C4469 /* Pods_ASCocoaCategory_Tests.framework */,
@@ -955,6 +952,7 @@
 				ABC4BEE01CF760F300D552A6 /* UIImage+ASDrawText.h in Headers */,
 				AB26FA4A1CF8BA9000B7C0B9 /* UIView+ASAutoresizingMask.h in Headers */,
 				AB26FA4F1CF8BAC300B7C0B9 /* UIScreen+ASSize.h in Headers */,
+				AB64DE261E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.h in Headers */,
 				ABC4BEE91CF7614300D552A6 /* UIDevice+ASVersionCached.h in Headers */,
 				ABFBFA651DCE6058000E6469 /* PHAssetCollection+ASAlbum.h in Headers */,
 				ABC4BEFF1CF7620C00D552A6 /* UIDevice+ASMacro.h in Headers */,
@@ -987,23 +985,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03AB195BCAA1C53FD4B7975D60FBAE6E /* ASCocoaCategory-ASCocoaCategory */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DFE08E9CF6FEA108AFF7034F8F587A8A /* Build configuration list for PBXNativeTarget "ASCocoaCategory-ASCocoaCategory" */;
-			buildPhases = (
-				FB80F3545D50FEB4902D95363875D3F5 /* Sources */,
-				9A58808A956BF74C1C829181AB61C3BD /* Frameworks */,
-				523826A32D7C98ECF76CBADED0F187D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ASCocoaCategory-ASCocoaCategory";
-			productName = "ASCocoaCategory-ASCocoaCategory";
-			productReference = 6B6176C7F30E277A2C052F4C5513229B /* ASCocoaCategory.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		C7F5570044A4D42366615682BC3B685C /* Pods-ASCocoaCategory_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 675DF9BDA0345B33B9BE7FCA98DF999A /* Build configuration list for PBXNativeTarget "Pods-ASCocoaCategory_Example" */;
@@ -1034,7 +1015,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C0C65E4C18F4AA56B4B650C3C3405DBB /* PBXTargetDependency */,
 			);
 			name = ASCocoaCategory;
 			productName = ASCocoaCategory;
@@ -1066,7 +1046,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1081,7 +1061,6 @@
 			projectRoot = "";
 			targets = (
 				DDC91647F6B8BA0A3C3CFB0AC8865BB8 /* ASCocoaCategory */,
-				03AB195BCAA1C53FD4B7975D60FBAE6E /* ASCocoaCategory-ASCocoaCategory */,
 				C7F5570044A4D42366615682BC3B685C /* Pods-ASCocoaCategory_Example */,
 				E76BFFC99DE543E749A16949CAE52643 /* Pods-ASCocoaCategory_Tests */,
 			);
@@ -1090,14 +1069,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		2E5C0A3FAF1ABD610CC4FDD33A6641F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A47CF3F144A1FF584F085502F8293DE /* ASCocoaCategory.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		523826A32D7C98ECF76CBADED0F187D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1125,6 +1096,7 @@
 				2E933590731C5438219EB33F2E51DB3A /* UIImage+ASColor.m in Sources */,
 				453DD8EA21DC664E68EBC02A96EA340D /* UIView+ASBackground.m in Sources */,
 				ABC4BEC01CF753AD00D552A6 /* UIColor+ASHSV.m in Sources */,
+				AB64DE271E2A853C00B69A2B /* UISearchBar+ASPrivateProperty.m in Sources */,
 				AB5DC5091CF0A659000AF2F1 /* NSString+ASJSONDeserialization.m in Sources */,
 				ABC4BEF91CF7615B00D552A6 /* UITextField+ASFont.m in Sources */,
 				AB5DC5281CF0C609000AF2F1 /* NSMutableArray+ASSafeSelector.m in Sources */,
@@ -1191,13 +1163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB80F3545D50FEB4902D95363875D3F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1212,12 +1177,6 @@
 			name = ASCocoaCategory;
 			target = DDC91647F6B8BA0A3C3CFB0AC8865BB8 /* ASCocoaCategory */;
 			targetProxy = DF065C919EA0B51AAC11C2B00FA174C9 /* PBXContainerItemProxy */;
-		};
-		C0C65E4C18F4AA56B4B650C3C3405DBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ASCocoaCategory-ASCocoaCategory";
-			target = 03AB195BCAA1C53FD4B7975D60FBAE6E /* ASCocoaCategory-ASCocoaCategory */;
-			targetProxy = C3DDDC7AB07AEF02C03ED91B8B2A01A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1235,8 +1194,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -1271,8 +1232,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1304,7 +1267,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4260CF45DFB98588EF0D4A456875FE0 /* Pods-ASCocoaCategory_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1335,7 +1298,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7930FE2DF72CECAC71F482799A130F67 /* ASCocoaCategory-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
@@ -1364,7 +1327,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5D55AFE9A1965C8FC43F054EF6EED87 /* Pods-ASCocoaCategory_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1395,7 +1358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7930FE2DF72CECAC71F482799A130F67 /* ASCocoaCategory-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
@@ -1424,7 +1387,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5488E64910BAB02CA8CE29F989E584E5 /* Pods-ASCocoaCategory_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1455,7 +1418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53824DD0B40CEC06A95EC63E22BAC3D9 /* Pods-ASCocoaCategory_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1482,30 +1445,6 @@
 			};
 			name = Release;
 		};
-		E1962F475456DCCA5531FCFEDCA7BE60 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7930FE2DF72CECAC71F482799A130F67 /* ASCocoaCategory-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ASCocoaCategory;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E65D745D745536684FC26FCCACDDC604 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7930FE2DF72CECAC71F482799A130F67 /* ASCocoaCategory-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ASCocoaCategory;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1523,15 +1462,6 @@
 			buildConfigurations = (
 				85DD1E99A5703BE4251014A2BEE17B34 /* Debug */,
 				4DE0E2C696206FE46DFD34998AB88B6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DFE08E9CF6FEA108AFF7034F8F587A8A /* Build configuration list for PBXNativeTarget "ASCocoaCategory-ASCocoaCategory" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1962F475456DCCA5531FCFEDCA7BE60 /* Debug */,
-				E65D745D745536684FC26FCCACDDC604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
