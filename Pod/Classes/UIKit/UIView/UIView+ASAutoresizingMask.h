@@ -14,8 +14,24 @@
 #   define UIViewAutoresizingRightCenter (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin)
 #endif
 
+#ifndef UIWindowRootViewController
+#   define UIWindowRootViewController [[UIApplication sharedApplication].delegate window].rootViewController
+#endif
+
+UIKIT_STATIC_INLINE UIViewController *CurrentRootViewController() {
+    UIViewController *vc = UIWindowRootViewController;
+    while (vc) {
+        if (vc.presentedViewController) {
+            vc = vc.presentedViewController;
+        } else {
+            break;
+        }
+    }
+    return vc;
+}
+
 #ifndef RootViewController
-#   define RootViewController [[UIApplication sharedApplication].delegate window].rootViewController
+#   define RootViewController CurrentRootViewController()
 #endif
 
 #ifndef RootView
