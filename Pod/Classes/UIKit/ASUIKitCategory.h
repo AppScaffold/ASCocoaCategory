@@ -52,4 +52,6 @@
 
 #import "UISearchBar+ASPrivateProperty.h"
 
+#import "UIViewController+ASPopover.h"
+
 #endif /* UIKitCategory_h */
