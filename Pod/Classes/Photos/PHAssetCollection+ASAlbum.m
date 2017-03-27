@@ -7,10 +7,11 @@
 //
 
 #import "PHAssetCollection+ASAlbum.h"
+#import "CGGeometryExtern.h"
 
 @implementation PHAssetCollection (ASAlbum)
 
-+ (NSArray<PHAssetCollection *> *)fetchAllUserAlbumsIncludeEmpty:(BOOL)include {
++ (NSArray<PHAssetCollection *> *)as_fetchAllUserAlbumsIncludeEmpty:(BOOL)include {
     NSMutableArray *result = [NSMutableArray array];
 
     PHFetchOptions *onlyImagesOptions;
@@ -39,6 +40,46 @@
     }];
 
     return result;
+}
+
+#pragma mark - thumb
+
+- (UIImage *)as_requestThumbImageWithSize:(CGSize)size info:(NSDictionary **)info {
+    PHImageRequestOptions *requestOptions = [[PHImageRequestOptions alloc] init];
+    requestOptions.resizeMode   = PHImageRequestOptionsResizeModeExact;
+    requestOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    requestOptions.synchronous  = YES;
+
+    __block UIImage *image = nil;
+    [self as_requestThumbImageWithOptions:requestOptions size:size resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info1) {
+        image = result;
+        if (info) {
+            *info = info1;
+        }
+    }];
+    return image;
+}
+
+- (PHImageRequestID)as_requestThumbImageWithSize:(CGSize)size
+                                   resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler {
+    PHImageRequestOptions *requestOptions = [[PHImageRequestOptions alloc] init];
+    requestOptions.resizeMode   = PHImageRequestOptionsResizeModeExact;
+    requestOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    return [self as_requestThumbImageWithOptions:requestOptions size:size resultHandler:resultHandler];
+}
+
+- (PHImageRequestID)as_requestThumbImageWithOptions:(PHImageRequestOptions *)requestOptions
+                                               size:(CGSize)size
+                                      resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler {
+    PHFetchResult *assetsFetchResult = [PHAsset fetchAssetsInAssetCollection:self options:nil];
+    PHAsset *asset = [assetsFetchResult objectAtIndex:0];
+    PHImageManager *manager = [PHImageManager defaultManager];
+    return [manager requestImageForAsset:asset
+                              targetSize:CGSizeScale(size, [UIScreen mainScreen].scale)
+                             contentMode:PHImageContentModeAspectFill
+                                 options:requestOptions
+                           resultHandler:resultHandler];
+    
 }
 
 @end

@@ -10,6 +10,12 @@
 
 @interface PHAssetCollection (ASAlbum)
 
-+ (NSArray<PHAssetCollection *> *)fetchAllUserAlbumsIncludeEmpty:(BOOL)include;
++ (NSArray<PHAssetCollection *> *)as_fetchAllUserAlbumsIncludeEmpty:(BOOL)include;
 
+- (UIImage *)as_requestThumbImageWithSize:(CGSize)size info:(NSDictionary **)info;
+- (PHImageRequestID)as_requestThumbImageWithSize:(CGSize)size
+                                   resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler;
+- (PHImageRequestID)as_requestThumbImageWithOptions:(PHImageRequestOptions *)requestOptions
+                                               size:(CGSize)size
+                                      resultHandler:(void (^)(UIImage *result, NSDictionary *info))resultHandler;
 @end
