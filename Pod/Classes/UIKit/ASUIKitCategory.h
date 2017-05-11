@@ -48,6 +48,8 @@
 #import "UIView+ASBlurredImage.h"
 #import "UIView+ASXibLoader.h"
 
+#import "UITableViewCell+ASTableView.h"
+
 #import "UITextField+ASPlaceholderColor.h"
 
 #import "UISearchBar+ASPrivateProperty.h"
