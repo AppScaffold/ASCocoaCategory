@@ -18,6 +18,10 @@
 #   define UIWindowRootViewController [[UIApplication sharedApplication].delegate window].rootViewController
 #endif
 
+#ifndef UIWindowRootView
+#   define UIWindowRootView UIWindowRootViewController.view
+#endif
+
 UIKIT_STATIC_INLINE UIViewController *CurrentRootViewController() {
     UIViewController *vc = UIWindowRootViewController;
     while (vc) {
