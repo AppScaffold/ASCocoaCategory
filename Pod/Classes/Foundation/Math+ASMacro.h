@@ -23,3 +23,7 @@
 #ifndef MIN3
 #   define MIN3(a, b, c) ((a) < (b) ? ((a) < (c) ? (a) : (c)) : ((b) < (c) ? (b) : (c)))
 #endif
+
+#ifndef RANGE
+#   define RANGE(min, value, max) MAX(MIN((max), (value)), (min))
+#endif
