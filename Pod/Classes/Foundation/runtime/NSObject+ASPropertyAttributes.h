@@ -15,6 +15,7 @@
 @interface NSObject (PropertyAttributes)
 
 + (NSArray *)as_allPropertyNames;
++ (NSArray *)as_allPropertyNamesIgnoreReadonly:(BOOL)ignore;
 
 #if __has_include(<libextobjc/EXTRuntimeExtensions.h>)
 + (ext_propertyAttributes *)as_copyPropertyAttributesByName:(NSString *)name;

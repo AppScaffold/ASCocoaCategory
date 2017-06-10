@@ -14,12 +14,22 @@
 @implementation NSObject (PropertyAttributes)
 
 + (NSArray *)as_allPropertyNames {
+    return [self as_allPropertyNamesIgnoreReadonly:NO];
+}
+
++ (NSArray *)as_allPropertyNamesIgnoreReadonly:(BOOL)ignore {
     unsigned count;
     objc_property_t *properties = class_copyPropertyList(self, &count);
     NSMutableArray *rv = [NSMutableArray array];
     unsigned i;
     for (i = 0; i < count; i++) {
         objc_property_t property = properties[i];
+        if (ignore) {
+            ext_propertyAttributes *attr = ext_copyPropertyAttributes(property);
+            if (attr->readonly) {
+                continue;
+            }
+        }
         NSString *name = [NSString stringWithUTF8String:property_getName(property)];
         [rv addObject:name];
     }
