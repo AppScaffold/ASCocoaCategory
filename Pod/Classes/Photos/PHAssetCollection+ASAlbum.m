@@ -51,12 +51,12 @@
     requestOptions.synchronous  = YES;
 
     __block UIImage *image = nil;
+    __block NSDictionary *outputInfo = nil;
     [self as_requestThumbImageWithOptions:requestOptions size:size resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info1) {
         image = result;
-        if (info) {
-            *info = info1;
-        }
+        outputInfo = info1;
     }];
+    *info = outputInfo;
     return image;
 }
 
