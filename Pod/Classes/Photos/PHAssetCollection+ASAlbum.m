@@ -56,7 +56,9 @@
         image = result;
         outputInfo = info1;
     }];
-    *info = outputInfo;
+    if (info) {
+        *info = outputInfo;
+    }
     return image;
 }
 
