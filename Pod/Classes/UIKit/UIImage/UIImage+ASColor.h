@@ -16,9 +16,10 @@
 + (UIImage *)as_transparentImage;
 
 /**
- *
+ * Get a 1x1 size image with color fill.
  */
 + (UIImage *)as_imageWithColor:(UIColor *)color;
++ (UIImage *)as_imageWithColor:(UIColor *)color withSize:(CGSize)size;
 
 /**
  *

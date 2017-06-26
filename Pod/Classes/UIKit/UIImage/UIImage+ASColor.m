@@ -21,20 +21,23 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (UIImage *)as_imageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0, 0, 1, 1);
-    // Create a 1 by 1 pixel context
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    [color setFill];
-    UIRectFill(rect);   // Fill it with your color
+    return [self as_imageWithColor:color withSize:CGSizeMake(1, 1)];
+}
+
++ (UIImage *)as_imageWithColor:(UIColor *)color withSize:(CGSize)size {
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
     return image;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (UIImage *)as_imageWithPlaceHolder:(UIImage *)holder backgroundColor:(UIColor *)color size:(CGSize)size {
-    UIImage *backgroundImage = [self as_imageWithColor:color];
+    UIImage *backgroundImage = [self as_imageWithColor:color withSize:size];
 
     UIGraphicsBeginImageContext(size);
     [backgroundImage drawInRect:CGRectMake(0, 0, size.width, size.height)];

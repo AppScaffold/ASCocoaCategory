@@ -292,19 +292,4 @@
   return newImage;
 }
 
-+ (UIImage *)as_imagePixelFromColor:(UIColor *)color {
-  return [UIImage as_imageFromColor:color withSize:CGSizeMake(1.0f, 1.0f)];
-}
-
-+ (UIImage *)as_imageFromColor:(UIColor *)color withSize:(CGSize)size {
-  CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-  UIGraphicsBeginImageContext(rect.size);
-  CGContextRef context = UIGraphicsGetCurrentContext();
-  CGContextSetFillColorWithColor(context, [color CGColor]);
-  CGContextFillRect(context, rect);
-  UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-  UIGraphicsEndImageContext();
-  return image;
-}
-
 @end

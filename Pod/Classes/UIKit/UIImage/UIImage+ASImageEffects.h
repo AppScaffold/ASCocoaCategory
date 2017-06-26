@@ -106,7 +106,4 @@
 
 - (UIImage *)as_rotateByDegrees:(CGFloat)degrees;
 
-+ (UIImage *)as_imagePixelFromColor:(UIColor *)color;
-+ (UIImage *)as_imageFromColor:(UIColor *)color withSize:(CGSize)size;
-
 @end
