@@ -17,4 +17,6 @@
 
 - (UIImage *)as_imageWithCornerRadius:(CGFloat)cornerRadius;
 
+- (UIImage *)as_imageWithShadowColor:(UIColor *)shadowColor shadowOpacity:(float)shadowOpacity shadowOffset:(CGSize)shadowOffset shadowRadius:(CGFloat)shadowRadius;
+
 @end

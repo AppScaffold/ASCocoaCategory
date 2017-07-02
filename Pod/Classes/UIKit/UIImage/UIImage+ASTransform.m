@@ -82,4 +82,21 @@
     return image;
 }
 
+- (UIImage *)as_imageWithShadowColor:(UIColor *)shadowColor shadowOpacity:(float)shadowOpacity shadowOffset:(CGSize)shadowOffset shadowRadius:(CGFloat)shadowRadius {
+    CGColorSpaceRef colourSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef shadowContext = CGBitmapContextCreate(NULL, self.size.width + shadowOffset.width * 2, self.size.height + shadowOffset.height * 2, CGImageGetBitsPerComponent(self.CGImage), 0,
+                                                       colourSpace, kCGImageAlphaPremultipliedLast);
+    CGColorSpaceRelease(colourSpace);
+
+    CGContextSetShadowWithColor(shadowContext, shadowOffset, shadowOffset.width, shadowColor.CGColor);
+    CGContextDrawImage(shadowContext, CGRectMake(shadowOffset.width, shadowOffset.height, self.size.width, self.size.height), self.CGImage);
+
+    CGImageRef shadowedCGImage = CGBitmapContextCreateImage(shadowContext);
+    CGContextRelease(shadowContext);
+
+    UIImage *shadowedImage = [UIImage imageWithCGImage:shadowedCGImage];
+    CGImageRelease(shadowedCGImage);
+
+    return shadowedImage;
+}
 @end
