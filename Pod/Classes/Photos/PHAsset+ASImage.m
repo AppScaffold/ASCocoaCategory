@@ -82,7 +82,14 @@
                               targetSize:CGSizeScale(size, [UIScreen mainScreen].scale)
                              contentMode:PHImageContentModeAspectFill
                                  options:requestOptions
-                           resultHandler:resultHandler];
+                           resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                               if (result) {
+                                   result = [[UIImage alloc] initWithData:UIImageJPEGRepresentation(result, 1) scale:[UIScreen mainScreen].scale];
+                               }
+                               if (resultHandler) {
+                                   resultHandler(result, info);
+                               }
+                           }];
 
 }
 
