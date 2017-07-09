@@ -33,6 +33,7 @@
 #import "UIImage+ASDraw.h"
 #import "UIImage+ASDrawText.h"
 #import "UIImage+ASResizable.h"
+#import "UIImage+ASResizing.h"
 #import "UIImage+ASTransform.h"
 #import "UIImage+ASImageEffects.h"
 
