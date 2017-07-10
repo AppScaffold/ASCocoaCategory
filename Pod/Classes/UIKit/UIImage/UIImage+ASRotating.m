@@ -13,7 +13,7 @@
 #import <Accelerate/Accelerate.h>
 #import "Math+ASMacro.h"
 
-@implementation UIImage (NYX_Rotating)
+@implementation UIImage (ASRotating)
 
 - (UIImage *)as_rotateInRadians:(CGFloat)radians flipOverHorizontalAxis:(BOOL)doHorizontalFlip verticalAxis:(BOOL)doVerticalFlip
 {
@@ -114,4 +114,15 @@
 	return [self as_rotateImagePixelsInRadians:(float)DEGREES_TO_RADIANS(degrees)];
 }
 
+- (UIImage*)as_imageByNormalizingOrientation {
+    if (self.imageOrientation == UIImageOrientationUp)
+        return self;
+    CGSize size = self.size;
+    UIGraphicsBeginImageContextWithOptions(size, NO, self.scale);
+    [self drawInRect:(CGRect){{0, 0}, size}];
+    UIImage* normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return normalizedImage;
+}
 @end

@@ -11,7 +11,7 @@
 #import "ASImagesHelper.h"
 
 
-@interface UIImage (NYX_Rotating)
+@interface UIImage (ASRotating)
 
 - (UIImage *)as_rotateInRadians:(float)radians;
 
@@ -24,5 +24,7 @@
 - (UIImage *)as_verticalFlip;
 
 - (UIImage *)as_horizontalFlip;
+
+- (UIImage*)as_imageByNormalizingOrientation;
 
 @end

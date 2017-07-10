@@ -36,6 +36,7 @@
 #import "UIImage+ASResizing.h"
 #import "UIImage+ASTransform.h"
 #import "UIImage+ASImageEffects.h"
+#import "UIImage+ASRotating.h"
 
 #import "UIView+ASAutoresizingMask.h"
 #import "UIView+ASBackground.h"
