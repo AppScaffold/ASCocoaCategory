@@ -51,6 +51,7 @@
 #import "UIView+ASXibLoader.h"
 
 #import "UITableViewCell+ASTableView.h"
+#import "UITableView+ASIndexPath.h"
 
 #import "UITextField+ASPlaceholderColor.h"
 
