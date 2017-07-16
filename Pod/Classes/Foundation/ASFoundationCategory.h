@@ -26,6 +26,10 @@
 #import "NSString+ASMacro.h"
 #import "NSString+ASNumeric.h"
 
+#import "NSString+ASQueryDictionary.h"
+#import "NSDictionary+ASQueryDictionary.h"
+#import "NSURL+ASQueryDictionary.h"
+
 #import "NSObject+ASPropertyAttributes.h"
 
 #import "NSString+ASJSONDeserialization.h"
