@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#if TARGET_IPHONE_SIMULATOR
+float UIAnimationDragCoefficient(void);
+#else
+#define UIAnimationDragCoefficient(any) 1
+#endif
+
 @interface UIView (ASAnimation)
 
 + (void)as_animateWithDuration:(NSTimeInterval)duration
