@@ -27,8 +27,10 @@
         if (ignore) {
             ext_propertyAttributes *attr = ext_copyPropertyAttributes(property);
             if (attr->readonly) {
+                free(attr);
                 continue;
             }
+            free(attr);
         }
         NSString *name = [NSString stringWithUTF8String:property_getName(property)];
         [rv addObject:name];
