@@ -20,6 +20,7 @@
 
 #import "UIDevice+ASMacro.h"
 #import "UIDevice+ASVersionCached.h"
+#import "UIDevice+ASModel.h"
 
 #import "UIButton+ASState.h"
 #import "UIButton+ASBackgroundColorForState.h"
