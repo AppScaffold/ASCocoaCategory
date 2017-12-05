@@ -12,7 +12,7 @@
 #import <ImageIO/ImageIO.h> // For CGImageDestination
 #import <MobileCoreServices/MobileCoreServices.h> // For the UTI types constants
 #import <AssetsLibrary/AssetsLibrary.h> // For photos album saving
-
+#import <Photos/Photos.h>
 
 @interface UIImage (NYX_Saving_private)
 -(CFStringRef)utiForType:(NYXImageType)type;
@@ -97,18 +97,10 @@
 	return ret;
 }
 
--(BOOL)saveToPhotosAlbum
-{
-	ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-	__block BOOL ret = YES;
-	[library writeImageToSavedPhotosAlbum:self.CGImage orientation:(ALAssetOrientation)self.imageOrientation completionBlock:^(NSURL* assetURL, NSError* error) {
-		if (!assetURL)
-		{
-			NSLog(@"%@", error);
-			ret = NO;
-		}
-	}];
-	return ret;
+-(void)saveToPhotosAlbum:(void(^)(BOOL success, NSError *error))completion {
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        [PHAssetChangeRequest creationRequestForAssetFromImage:self];
+    } completionHandler:completion];
 }
 
 +(NSString*)extensionForUTI:(CFStringRef)uti
