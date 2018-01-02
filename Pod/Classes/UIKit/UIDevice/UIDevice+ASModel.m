@@ -88,7 +88,7 @@
 }
 
 - (long long)as_modelType {
-    NSNumber *obj = objc_getAssociatedObject(self, @selector(as_type));
+    NSNumber *obj = objc_getAssociatedObject(self, @selector(as_modelType));
     if (obj) {
         return [obj longLongValue];
     }
